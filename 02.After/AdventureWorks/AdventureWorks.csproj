@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureWorks.Sales.Controller\AdventureWorks.Sales.Controller.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales\AdventureWorks.Sales.csproj" />
+  </ItemGroup>
+
+</Project>

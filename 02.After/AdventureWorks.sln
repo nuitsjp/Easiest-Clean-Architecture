@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks", "AdventureWorks\AdventureWorks.csproj", "{10210D9A-CDC8-41E1-9D91-49213BC501E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdventureWorks.Sales", "AdventureWorks.Sales", "{C7C554CB-3412-4A74-AEFE-150626B44C34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales", "AdventureWorks.Sales\AdventureWorks.Sales.csproj", "{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.UseCase", "AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj", "{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Controller", "AdventureWorks.Sales.Controller\AdventureWorks.Sales.Controller.csproj", "{18BC48A9-B0CB-4BC2-822A-5554930AC82A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Presenter", "AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj", "{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Sales.Infrastructure", "AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj", "{11064C4A-04A6-4080-A863-2BFE62FC8009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10210D9A-CDC8-41E1-9D91-49213BC501E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10210D9A-CDC8-41E1-9D91-49213BC501E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10210D9A-CDC8-41E1-9D91-49213BC501E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10210D9A-CDC8-41E1-9D91-49213BC501E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BC48A9-B0CB-4BC2-822A-5554930AC82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BC48A9-B0CB-4BC2-822A-5554930AC82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BC48A9-B0CB-4BC2-822A-5554930AC82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BC48A9-B0CB-4BC2-822A-5554930AC82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11064C4A-04A6-4080-A863-2BFE62FC8009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11064C4A-04A6-4080-A863-2BFE62FC8009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11064C4A-04A6-4080-A863-2BFE62FC8009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11064C4A-04A6-4080-A863-2BFE62FC8009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D01762DD-43F7-4B84-9E5C-FE17D817BD0A} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+		{18BC48A9-B0CB-4BC2-822A-5554930AC82A} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+		{11064C4A-04A6-4080-A863-2BFE62FC8009} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {819C7CAE-8D14-4648-84F8-6C24C19AC50B}
+	EndGlobalSection
+EndGlobal
