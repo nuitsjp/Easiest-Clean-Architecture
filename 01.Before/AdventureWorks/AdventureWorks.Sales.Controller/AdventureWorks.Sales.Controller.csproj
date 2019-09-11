@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales\AdventureWorks.Sales.csproj" />
+  </ItemGroup>
+
+</Project>
