@@ -10,11 +10,20 @@
 
 ## コード
 
-これから作るよ！
+以下のフォルダにそれぞれ
+
+- 01.Before：非クリーンなアーキテクチャ
+- 02.After：クリーンなアーキテクチャ
+
+という感じで置いてあります。
 
 ## 環境
 
+SQL Serverのサンプルデータベース「Adventure Works」を利用しています。いつもお世話になっております。
+
 * Windows 10
-* Visual Studio 2019
+* Visual Studio 2019 Preview
 * SQL Server 2017 Developer Edition
 * SQL Server SampleDB AndentureWorks 2017
+
+細かいバージョンはやや異なっても動く気がします。多分。

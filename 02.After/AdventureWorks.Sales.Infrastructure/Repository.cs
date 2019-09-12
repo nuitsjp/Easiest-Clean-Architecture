@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using Dapper.FastCrud;
+using Dapper;
 
 namespace AdventureWorks.Sales.Infrastructure
 {
@@ -8,7 +8,7 @@ namespace AdventureWorks.Sales.Infrastructure
     {
         public IEnumerable<ProductSales> GetProductSales(IDbConnection connection)
         {
-            throw new System.NotImplementedException();
+            return connection.Query<ProductSales>(Properties.Resources.GetProductSales);
         }
     }
 }

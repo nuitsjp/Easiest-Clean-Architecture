@@ -15,7 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Contro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Presenter", "AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj", "{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Sales.Infrastructure", "AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj", "{11064C4A-04A6-4080-A863-2BFE62FC8009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Infrastructure", "AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj", "{11064C4A-04A6-4080-A863-2BFE62FC8009}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71640266-2F20-4D67-98B8-D4924D5CC00B}"
+	ProjectSection(SolutionItems) = preProject
+		CreateProductSalesView.sql = CreateProductSalesView.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

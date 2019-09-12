@@ -15,7 +15,7 @@ namespace AdventureWorks
                     new CsvPresenter("output.csv"),
                     new UseCase(
                         new Repository(),
-                        "Data Source=localhost\\MSSQLSERVER01;Initial Catalog=AdventureWorks2017;Integrated Security=True;"));
+                        "Data Source=localhost;Initial Catalog=AdventureWorks2017;Integrated Security=True;"));
             controller.Report();
         }
     }
