@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AdventureWorks.Sales.Domain;
 
 namespace AdventureWorks.Sales.Presenter
 {

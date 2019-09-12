@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AdventureWorks.Sales
+namespace AdventureWorks.Sales.Domain
 {
     [Table("SalesOrderDetail", Schema = "Sales")]
     public class SalesOrderDetail

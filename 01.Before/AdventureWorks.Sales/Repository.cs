@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
+using AdventureWorks.Sales.Entity;
 using Dapper.FastCrud;
 
-namespace AdventureWorks.Sales
+namespace AdventureWorks.Sales.Domain
 {
     public class Repository : IRepository
     {

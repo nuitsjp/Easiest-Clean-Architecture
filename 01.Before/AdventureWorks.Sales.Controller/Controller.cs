@@ -6,19 +6,16 @@ namespace AdventureWorks.Sales.Controller
 {
     public class Controller
     {
-        private readonly IPresenter _presenter;
         private readonly IUseCase _useCase;
 
-        public Controller(IPresenter presenter, IUseCase useCase)
+        public Controller(IUseCase useCase)
         {
-            _presenter = presenter;
             _useCase = useCase;
         }
 
         public void Report(string filePath)
         {
-            var productSales = _useCase.GerProductSales();
-            _presenter.Report(filePath, productSales);
+            _useCase.ReportProductSales(filePath);
         }
     }
 }

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AdventureWorks.Sales.Domain;
+using AdventureWorks.Sales.Entity;
+using AdventureWorks.Sales.Presenter;
 using Microsoft.Data.SqlClient;
 
 namespace AdventureWorks.Sales.UseCase
@@ -9,15 +12,18 @@ namespace AdventureWorks.Sales.UseCase
     {
         private readonly IRepository _repository;
 
+        private readonly IPresenter _presenter;
+
         private readonly string _connectionString;
 
-        public UseCase(IRepository repository, string connectionString)
+        public UseCase(IPresenter presenter, IRepository repository, string connectionString)
         {
+            _presenter = presenter;
             _repository = repository;
             _connectionString = connectionString;
         }
 
-        public IEnumerable<ProductSales> GerProductSales()
+        public void ReportProductSales(string filePath)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -35,7 +41,7 @@ namespace AdventureWorks.Sales.UseCase
                             });
                 // 全てのプロダクトを取得し、先に集計したプロダクトID別の総売上とJoinする。
                 // その上で、プロダクト名別 総売上リストを作成し、売上額の多い順にソートする。
-                return
+                var productSales =
                     _repository.GetProducts(connection)
                         .Join(
                             salesByProductId,
@@ -47,7 +53,8 @@ namespace AdventureWorks.Sales.UseCase
                                     Name = p.Name,
                                     Sales = s.TotalAmount
                                 })
-                        .OrderByDescending(productSales => productSales.Sales);
+                        .OrderByDescending(x => x.Sales);
+                _presenter.Report(filePath, productSales);
             }
         }
     }

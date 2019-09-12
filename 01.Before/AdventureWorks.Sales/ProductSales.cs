@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AdventureWorks.Sales
+﻿namespace AdventureWorks.Sales.Domain
 {
     public class ProductSales
     {

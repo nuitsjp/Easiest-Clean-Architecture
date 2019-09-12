@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using AdventureWorks.Sales.Domain;
 
-namespace AdventureWorks.Sales
+namespace AdventureWorks.Sales.Entity
 {
     public interface IRepository
     {
