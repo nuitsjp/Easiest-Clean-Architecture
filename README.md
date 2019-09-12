@@ -22,7 +22,7 @@
 SQL Serverのサンプルデータベース「Adventure Works」を利用しています。いつもお世話になっております。
 
 * Windows 10
-* Visual Studio 2019 Preview
+* Visual Studio 2019
 * SQL Server 2017 Developer Edition
 * SQL Server SampleDB AndentureWorks 2017
 
