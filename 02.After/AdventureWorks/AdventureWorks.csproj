@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AdventureWorks.Sales.Controller\AdventureWorks.Sales.Controller.csproj" />
-    <ProjectReference Include="..\AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Gateway.csproj" />
     <ProjectReference Include="..\AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj" />
     <ProjectReference Include="..\AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj" />
-    <ProjectReference Include="..\AdventureWorks.Sales\AdventureWorks.Sales.csproj" />
+    <ProjectReference Include="..\AdventureWorks.Sales\AdventureWorks.Sales.Entity.csproj" />
   </ItemGroup>
 
 </Project>

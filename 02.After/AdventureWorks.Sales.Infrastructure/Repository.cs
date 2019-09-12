@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using AdventureWorks.Sales.Entity;
 using Dapper;
 
-namespace AdventureWorks.Sales.Infrastructure
+namespace AdventureWorks.Sales.Gateway
 {
     public class Repository : IRepository
     {

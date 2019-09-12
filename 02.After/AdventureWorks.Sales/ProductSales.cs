@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AdventureWorks.Sales
+﻿namespace AdventureWorks.Sales.Entity
 {
     public class ProductSales
     {

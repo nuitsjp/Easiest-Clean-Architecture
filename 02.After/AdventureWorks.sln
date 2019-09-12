@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks", "Adventure
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdventureWorks.Sales", "AdventureWorks.Sales", "{C7C554CB-3412-4A74-AEFE-150626B44C34}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales", "AdventureWorks.Sales\AdventureWorks.Sales.csproj", "{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Entity", "AdventureWorks.Sales\AdventureWorks.Sales.Entity.csproj", "{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.UseCase", "AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj", "{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Contro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Presenter", "AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj", "{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Infrastructure", "AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Infrastructure.csproj", "{11064C4A-04A6-4080-A863-2BFE62FC8009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Gateway", "AdventureWorks.Sales.Infrastructure\AdventureWorks.Sales.Gateway.csproj", "{11064C4A-04A6-4080-A863-2BFE62FC8009}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71640266-2F20-4D67-98B8-D4924D5CC00B}"
 	ProjectSection(SolutionItems) = preProject

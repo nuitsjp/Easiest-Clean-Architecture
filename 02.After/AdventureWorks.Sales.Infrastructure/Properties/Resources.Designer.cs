@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AdventureWorks.Sales.Infrastructure.Properties {
+namespace AdventureWorks.Sales.Gateway.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace AdventureWorks.Sales.Infrastructure.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AdventureWorks.Sales.Infrastructure.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AdventureWorks.Sales.Gateway.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,14 +62,12 @@ namespace AdventureWorks.Sales.Infrastructure.Properties {
         
         /// <summary>
         ///   SELECT
-        ///	Product.Name,
-        ///	SUM(LineTotal) AS Salse
+        ///	Name,
+        ///	Sales
         ///FROM
-        ///	Production.Product
-        ///	INNER JOIN Sales.SalesOrderDetail
-        ///		ON	Product.ProductID = SalesOrderDetail.ProductID
-        ///GROUP BY
-        ///	Product.ProductID, Product.Name に類似しているローカライズされた文字列を検索します。
+        ///	ProductSales
+        ///ORDER BY
+        ///	Name に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string GetProductSales {
             get {

@@ -1,6 +1,6 @@
 ﻿using AdventureWorks.Sales;
 using AdventureWorks.Sales.Controller;
-using AdventureWorks.Sales.Infrastructure;
+using AdventureWorks.Sales.Gateway;
 using AdventureWorks.Sales.Presenter;
 using AdventureWorks.Sales.UseCase;
 
@@ -12,8 +12,8 @@ namespace AdventureWorks
         {
             var controller =
                 new Controller(
-                    new CsvPresenter("output.csv"),
                     new UseCase(
+                        new CsvPresenter("output.csv"),
                         new Repository(),
                         "Data Source=localhost;Initial Catalog=AdventureWorks2017;Integrated Security=True;"));
             controller.Report();

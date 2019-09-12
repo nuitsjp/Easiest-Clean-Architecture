@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using AdventureWorks.Sales.Entity;
+using AdventureWorks.Sales.UseCase;
 using CsvHelper;
 
 namespace AdventureWorks.Sales.Presenter

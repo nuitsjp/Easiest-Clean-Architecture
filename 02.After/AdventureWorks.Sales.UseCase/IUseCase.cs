@@ -5,6 +5,6 @@ namespace AdventureWorks.Sales.UseCase
 {
     public interface IUseCase
     {
-        IEnumerable<ProductSales> GerProductSales();
+        void ReportProductSales();
     }
 }
