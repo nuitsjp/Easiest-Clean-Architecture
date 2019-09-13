@@ -1,8 +1,8 @@
 ﻿using AdventureWorks.Sales;
-using AdventureWorks.Sales.Controller;
-using AdventureWorks.Sales.Domain;
-using AdventureWorks.Sales.Presenter;
-using AdventureWorks.Sales.UseCase;
+using AdventureWorks.Sales.Controllers;
+using AdventureWorks.Sales.Gateways;
+using AdventureWorks.Sales.Presenters;
+using AdventureWorks.Sales.UseCases;
 
 namespace AdventureWorks
 {

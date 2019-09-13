@@ -8,4 +8,8 @@
     <PackageReference Include="Dapper.FastCrud" Version="2.5.0.39" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureWorks.Sales\AdventureWorks.Sales.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

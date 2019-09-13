@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using AdventureWorks.Sales.Domain;
 
-namespace AdventureWorks.Sales.Entity
+namespace AdventureWorks.Sales.Entities
 {
     public interface IRepository
     {
-        IEnumerable<Product> GetProducts(IDbConnection connection);
-        IEnumerable<SalesOrderDetail> GetSalesOrderDetail(IDbConnection connection);
+        IEnumerable<ProductSales> GetProductSales(IDbConnection connection);
     }
 }

@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks", "Adventure
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdventureWorks.Sales", "AdventureWorks.Sales", "{C7C554CB-3412-4A74-AEFE-150626B44C34}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Entity", "AdventureWorks.Sales\AdventureWorks.Sales.Entity.csproj", "{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Entities", "AdventureWorks.Sales\AdventureWorks.Sales.Entities.csproj", "{D01762DD-43F7-4B84-9E5C-FE17D817BD0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.UseCase", "AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCase.csproj", "{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.UseCases", "AdventureWorks.Sales.UseCase\AdventureWorks.Sales.UseCases.csproj", "{CD18A796-3CD6-4F8F-9044-D37A9207E9FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Controller", "AdventureWorks.Sales.Controller\AdventureWorks.Sales.Controller.csproj", "{18BC48A9-B0CB-4BC2-822A-5554930AC82A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Controllers", "AdventureWorks.Sales.Controller\AdventureWorks.Sales.Controllers.csproj", "{18BC48A9-B0CB-4BC2-822A-5554930AC82A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Presenter", "AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenter.csproj", "{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Sales.Presenters", "AdventureWorks.Sales.Presenter\AdventureWorks.Sales.Presenters.csproj", "{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Sales.Gateways", "AdventureWorks.Sales.Gateway\AdventureWorks.Sales.Gateways.csproj", "{39162531-4AA4-4D1C-8D73-30F947F0EFD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39162531-4AA4-4D1C-8D73-30F947F0EFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39162531-4AA4-4D1C-8D73-30F947F0EFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39162531-4AA4-4D1C-8D73-30F947F0EFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39162531-4AA4-4D1C-8D73-30F947F0EFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{CD18A796-3CD6-4F8F-9044-D37A9207E9FC} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
 		{18BC48A9-B0CB-4BC2-822A-5554930AC82A} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
 		{E6889562-ABB3-4908-AED7-5AD8EEE30FC7} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
+		{39162531-4AA4-4D1C-8D73-30F947F0EFD9} = {C7C554CB-3412-4A74-AEFE-150626B44C34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {819C7CAE-8D14-4648-84F8-6C24C19AC50B}

@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using AdventureWorks.Sales.Domain;
-
-namespace AdventureWorks.Sales.UseCase
+﻿namespace AdventureWorks.Sales.UseCases
 {
     public interface IUseCase
     {

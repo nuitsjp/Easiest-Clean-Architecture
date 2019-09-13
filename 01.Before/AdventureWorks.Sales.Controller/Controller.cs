@@ -1,8 +1,6 @@
-﻿using System;
-using AdventureWorks.Sales.Presenter;
-using AdventureWorks.Sales.UseCase;
+﻿using AdventureWorks.Sales.UseCases;
 
-namespace AdventureWorks.Sales.Controller
+namespace AdventureWorks.Sales.Controllers
 {
     public class Controller
     {

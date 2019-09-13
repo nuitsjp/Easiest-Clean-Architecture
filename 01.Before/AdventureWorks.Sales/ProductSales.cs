@@ -1,4 +1,4 @@
-﻿namespace AdventureWorks.Sales.Domain
+﻿namespace AdventureWorks.Sales.Entities
 {
     public class ProductSales
     {

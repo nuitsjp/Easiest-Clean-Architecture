@@ -1,8 +1,7 @@
-﻿using System;
+﻿using AdventureWorks.Sales.Entities;
 using System.Collections.Generic;
-using AdventureWorks.Sales.Domain;
 
-namespace AdventureWorks.Sales.Presenter
+namespace AdventureWorks.Sales.Presenters
 {
     public interface IPresenter
     {
