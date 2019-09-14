@@ -4,9 +4,9 @@
 
 ## スライド
 
-まだα版ですが、参考にどうぞ
+資料はこちら
 
-[世界一わかりやすいClean Architecture alpha-1](https://www.slideshare.net/AtsushiNakamura4/easiest-clean-architecture-alpha1)
+[世界一わかりやすいClean Architecture](https://www.slideshare.net/AtsushiNakamura4/clean-architecture-release)
 
 ## コード
 
