@@ -1,12 +1,16 @@
 # 世界一わかりやすいClean Architecture
 
-[Visual Studio Users Community Japan](https://vsuc.connpass.com/event/143114/)にて発表予定の「世界一わかりやすいClean Architecture」の資料です。
+[Visual Studio Users Community Japan](https://vsuc.connpass.com/event/143114/)にて発表した
 
-## スライド
+- 「世界一わかりやすいClean Architecture」
 
-資料はこちら
+の資料です。
 
-[世界一わかりやすいClean Architecture](https://www.slideshare.net/AtsushiNakamura4/clean-architecture-release)
+本資料はコード、スライドともにCreative Commons Public Licenses「CC BY-SA 4.0」の元公開しています。
+
+修正や商用含め利用いただいて問題ありませんが詳細は以下のリンクをご覧ください。
+
+[https://creativecommons.org/licenses/by-sa/4.0/deed.ja](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 
 ## コード
 
