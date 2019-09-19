@@ -12,6 +12,12 @@
 
 [https://creativecommons.org/licenses/by-sa/4.0/deed.ja](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 
+## 解説資料
+
+以下の記事も参照ください。
+
+[https://www.nuits.jp/entry/easiest-clean-architecture-2019-09](https://www.nuits.jp/entry/easiest-clean-architecture-2019-09)
+
 ## コード
 
 以下のフォルダにそれぞれ
