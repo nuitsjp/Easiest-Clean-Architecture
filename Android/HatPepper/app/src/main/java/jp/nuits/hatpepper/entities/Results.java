@@ -23,6 +23,10 @@ public class Results {
     @Expose
     private Integer resultsAvailable;
 
+    @SerializedName("error")
+    @Expose
+    private List<Error> error;
+
     public String getApiVersion() {
         return apiVersion;
     }
@@ -61,6 +65,14 @@ public class Results {
 
     public void setResultsAvailable(Integer resultsAvailable) {
         this.resultsAvailable = resultsAvailable;
+    }
+
+    public List<Error> getError() {
+        return error;
+    }
+
+    public void setError(List<Error> error) {
+        this.error = error;
     }
 
 }

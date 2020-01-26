@@ -7,10 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".presentations.RestaurantsFragment">
 
-    <ListView
-        android:id="@id/android:list"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:drawSelectorOnTop="false"/>
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hotpepper"
+            android:scaleType="fitCenter"/>
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
