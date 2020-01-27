@@ -1,5 +1,5 @@
 
-package jp.nuits.hatpepper.entities;
+package jp.nuits.hatpepper.infrastructures;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

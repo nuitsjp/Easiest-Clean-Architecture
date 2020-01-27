@@ -1,12 +1,10 @@
 package jp.nuits.hatpepper.usecases;
 
-import androidx.core.util.Consumer;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
-import jp.nuits.hatpepper.entities.GourmetSearchApi;
-import jp.nuits.hatpepper.entities.Shop;
+import jp.nuits.hatpepper.infrastructures.Shop;
 
 public class ReferRestaurantsImpl implements ReferRestaurants {
     private final GourmetSearchApi gourmetSearchApi;
@@ -17,13 +15,6 @@ public class ReferRestaurantsImpl implements ReferRestaurants {
 
     @Override
     public void Find(Consumer<List<Restaurant>> consumer) {
-        gourmetSearchApi.search((gourmetSearchResults) -> {
-            ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
-            for (Shop shop : gourmetSearchResults.getResults().getShop())
-            {
-                restaurants.add(new Restaurant(shop.getName()));
-            }
-            consumer.accept(restaurants);
-        });
+        gourmetSearchApi.search(consumer);
     }
 }

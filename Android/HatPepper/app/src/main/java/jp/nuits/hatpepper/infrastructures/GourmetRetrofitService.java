@@ -1,9 +1,7 @@
 package jp.nuits.hatpepper.infrastructures;
 
-import jp.nuits.hatpepper.entities.GourmetSearchResults;
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface GourmetRetrofitService {

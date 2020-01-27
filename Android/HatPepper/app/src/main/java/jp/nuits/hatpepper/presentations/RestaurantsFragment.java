@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,16 +14,13 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import javax.inject.Inject;
-
-import jp.nuits.hatpepper.HatPepperApplication;
 import jp.nuits.hatpepper.R;
+import jp.nuits.hatpepper.ViewModelFactory;
 import jp.nuits.hatpepper.usecases.Restaurant;
 
 public class RestaurantsFragment extends ListFragment {
 
-    @Inject
-    RestaurantsViewModel restaurantsViewModel;
+    private RestaurantsViewModel restaurantsViewModel;
 
     private RestaurantsAdapter restaurantsAdapter;
 
@@ -47,7 +45,9 @@ public class RestaurantsFragment extends ListFragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        ((HatPepperApplication) getActivity().getApplicationContext()).getAppComponent().inject(this);
+        ViewModelProvider viewModelProvider = new ViewModelProvider(getViewModelStore(), new ViewModelFactory());
+        restaurantsViewModel = viewModelProvider.get(RestaurantsViewModel.class);
+
         super.onActivityCreated(savedInstanceState);
 
         restaurantsViewModel.findRestaurants(

@@ -1,20 +1,28 @@
 
-package jp.nuits.hatpepper.entities;
+package jp.nuits.hatpepper.infrastructures;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Genre {
+public class Budget {
 
+    @SerializedName("average")
+    @Expose
+    private String average;
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("catch")
-    @Expose
-    private String _catch;
     @SerializedName("code")
     @Expose
     private String code;
+
+    public String getAverage() {
+        return average;
+    }
+
+    public void setAverage(String average) {
+        this.average = average;
+    }
 
     public String getName() {
         return name;
@@ -22,14 +30,6 @@ public class Genre {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCatch() {
-        return _catch;
-    }
-
-    public void setCatch(String _catch) {
-        this._catch = _catch;
     }
 
     public String getCode() {

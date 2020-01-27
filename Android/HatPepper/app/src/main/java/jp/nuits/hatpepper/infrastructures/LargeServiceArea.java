@@ -1,10 +1,10 @@
 
-package jp.nuits.hatpepper.entities;
+package jp.nuits.hatpepper.infrastructures;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class SubGenre {
+public class LargeServiceArea {
 
     @SerializedName("name")
     @Expose

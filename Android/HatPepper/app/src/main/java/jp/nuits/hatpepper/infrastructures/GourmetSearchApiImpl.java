@@ -1,13 +1,14 @@
 package jp.nuits.hatpepper.infrastructures;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 
-import jp.nuits.hatpepper.entities.GourmetSearchApi;
-import jp.nuits.hatpepper.entities.GourmetSearchResults;
+import jp.nuits.hatpepper.usecases.GourmetSearchApi;
+import jp.nuits.hatpepper.usecases.Restaurant;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GourmetSearchApiImpl implements GourmetSearchApi {
 
@@ -18,14 +19,20 @@ public class GourmetSearchApiImpl implements GourmetSearchApi {
     }
 
     @Override
-    public void search(Consumer<GourmetSearchResults> consumer) {
+    public void search(Consumer<List<Restaurant>> consumer) {
         GourmetRetrofitService retrofitService = retrofit.create(GourmetRetrofitService.class);
         Call<GourmetSearchResults> call = retrofitService.Search(Secrets.API_KEY);
         call.enqueue(new Callback<GourmetSearchResults>() {
             @Override
             public void onResponse(Call<GourmetSearchResults> call, retrofit2.Response<GourmetSearchResults> response) {
+                ArrayList<Restaurant> restaurants = new ArrayList<>();
+
                 GourmetSearchResults gourmetSearchResults = response.body();
-                consumer.accept(gourmetSearchResults);
+                for (Shop shop : gourmetSearchResults.getResults().getShop())
+                {
+                    restaurants.add(new Restaurant(shop.getName()));
+                }
+                consumer.accept(restaurants);
             }
 
             @Override
