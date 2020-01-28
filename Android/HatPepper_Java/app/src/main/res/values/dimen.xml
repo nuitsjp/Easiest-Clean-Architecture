@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="restaurant_name_size">24sp</dimen>
-    <dimen name="restaurant_margin">12dp</dimen>
-</resources>
