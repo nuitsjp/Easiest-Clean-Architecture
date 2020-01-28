@@ -1,25 +1,14 @@
 
-package jp.nuits.hatpepper.infrastructures;
+package jp.nuits.hatpepper.infrastructures.services;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class CouponUrls {
+public class Urls {
 
-    @SerializedName("sp")
-    @Expose
-    private String sp;
     @SerializedName("pc")
     @Expose
     private String pc;
-
-    public String getSp() {
-        return sp;
-    }
-
-    public void setSp(String sp) {
-        this.sp = sp;
-    }
 
     public String getPc() {
         return pc;

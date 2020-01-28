@@ -45,7 +45,7 @@ public class RestaurantsFragment extends ListFragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        ViewModelProvider viewModelProvider = new ViewModelProvider(getViewModelStore(), new ViewModelFactory());
+        ViewModelProvider viewModelProvider = new ViewModelProvider(getViewModelStore(), new ViewModelFactory(getActivity()));
         restaurantsViewModel = viewModelProvider.get(RestaurantsViewModel.class);
 
         super.onActivityCreated(savedInstanceState);

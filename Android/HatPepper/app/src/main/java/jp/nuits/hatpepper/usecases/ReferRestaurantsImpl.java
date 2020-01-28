@@ -1,10 +1,7 @@
 package jp.nuits.hatpepper.usecases;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-
-import jp.nuits.hatpepper.infrastructures.Shop;
 
 public class ReferRestaurantsImpl implements ReferRestaurants {
     private final GourmetSearchApi gourmetSearchApi;

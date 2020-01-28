@@ -1,4 +1,4 @@
-package jp.nuits.hatpepper.infrastructures;
+package jp.nuits.hatpepper.infrastructures.services;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

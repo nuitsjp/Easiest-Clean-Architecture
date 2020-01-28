@@ -1,17 +1,14 @@
 
-package jp.nuits.hatpepper.infrastructures;
+package jp.nuits.hatpepper.infrastructures.services;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Genre {
+public class ServiceArea {
 
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("catch")
-    @Expose
-    private String _catch;
     @SerializedName("code")
     @Expose
     private String code;
@@ -22,14 +19,6 @@ public class Genre {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCatch() {
-        return _catch;
-    }
-
-    public void setCatch(String _catch) {
-        this._catch = _catch;
     }
 
     public String getCode() {
