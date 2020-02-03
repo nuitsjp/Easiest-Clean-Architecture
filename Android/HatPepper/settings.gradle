@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':usecase', ':usecase_impl', ':infrastructure_api', ':infrastructure_location', ':infrastructure_time'
 rootProject.name='HatPepper'
