@@ -3,6 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=visualstudio,androidstudio,visualstudiocode
 
 Secrets.kt
+*.ldb
 
 ### VisualStudioCode ###
 .vscode/*
