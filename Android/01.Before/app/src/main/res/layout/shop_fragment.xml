@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.NearbyShopsFragment">
+    <data>
+        <variable name="listViewModel" type="jp.nuits.hatpepper.presentation.NearbyShopsViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shops"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layoutManager="LinearLayoutManager"
+                />
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/content_margin"-->
+<!--                android:src="@drawable/hotpepper"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:layout_gravity="bottom"/>-->
+            <jp.nuits.hatpepper.presentation.CreditView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_margin"
+                android:textAlignment="center"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

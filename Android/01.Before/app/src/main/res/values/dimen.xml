@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shop_name_size">16sp</dimen>
+    <dimen name="shop_content_text_size">12sp</dimen>
+    <dimen name="shop_margin">8dp</dimen>
+    <dimen name="content_margin">4dp</dimen>
+</resources>
