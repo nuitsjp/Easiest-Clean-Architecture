@@ -5,7 +5,7 @@ package jp.nuits.hatpepper.usecase
  * @property id ID
  * @property name 名称
  */
-class Shop(
+class Restaurant(
     val id : String,
     val name : String,
     val genre : String,

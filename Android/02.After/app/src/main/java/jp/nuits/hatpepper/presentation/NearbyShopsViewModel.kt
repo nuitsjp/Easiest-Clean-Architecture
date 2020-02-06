@@ -3,19 +3,19 @@ package jp.nuits.hatpepper.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import jp.nuits.hatpepper.usecase.FindNearbyShops
-import jp.nuits.hatpepper.usecase.Shop
+import jp.nuits.hatpepper.usecase.FindNearbyRestaurants
+import jp.nuits.hatpepper.usecase.Restaurant
 import kotlinx.coroutines.launch
 
 class NearbyShopsViewModel(
-    val findNearbyShops: FindNearbyShops
+    val findNearbyRestaurants: FindNearbyRestaurants
 ) : ViewModel() {
 
-    var shops: MutableLiveData<List<Shop>> = MutableLiveData()
+    var shops: MutableLiveData<List<Restaurant>> = MutableLiveData()
 
     fun findShops() {
         viewModelScope.launch {
-            shops.postValue(findNearbyShops.find())
+            shops.postValue(findNearbyRestaurants.find())
         }
     }
 }

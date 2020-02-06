@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.NearbyShopsFragment">
     <data>
-        <variable name="shop" type="jp.nuits.hatpepper.usecase.Shop"/>
+        <variable name="restaurant" type="jp.nuits.hatpepper.usecase.Restaurant"/>
     </data>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="@dimen/shop_margin">
+            android:layout_margin="@dimen/restaurant_margin">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:imageUrl="@{shop.photoUrl}" />
+                    app:imageUrl="@{restaurant.photoUrl}" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -38,14 +38,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@{shop.genre}"
-                        android:textSize="@dimen/shop_content_text_size" />
+                        android:text="@{restaurant.genre}"
+                        android:textSize="@dimen/restaurant_content_text_size" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@{shop.genreCatch}"
-                        android:textSize="@dimen/shop_content_text_size" />
+                        android:text="@{restaurant.genreCatch}"
+                        android:textSize="@dimen/restaurant_content_text_size" />
 
                     <GridLayout
                         android:layout_width="match_parent"
@@ -57,27 +57,27 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="💰"
-                            android:textSize="@dimen/shop_content_text_size"
+                            android:textSize="@dimen/restaurant_content_text_size"
                             android:layout_marginRight="@dimen/content_margin"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{shop.budget}"
-                            android:textSize="@dimen/shop_content_text_size"/>
+                            android:text="@{restaurant.budget}"
+                            android:textSize="@dimen/restaurant_content_text_size"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="🚃"
-                            android:textSize="@dimen/shop_content_text_size"
+                            android:textSize="@dimen/restaurant_content_text_size"
                             android:layout_marginRight="@dimen/content_margin"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{shop.access}"
-                            android:textSize="@dimen/shop_content_text_size" />
+                            android:text="@{restaurant.access}"
+                            android:textSize="@dimen/restaurant_content_text_size" />
 
                     </GridLayout>
 

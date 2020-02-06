@@ -2,7 +2,7 @@ package jp.nuits.hatpepper.infrastructure.api
 
 import jp.nuits.hatpepper.usecase.impl.GourmetSearchApi
 import jp.nuits.hatpepper.usecase.impl.DeviceLocation
-import jp.nuits.hatpepper.usecase.Shop
+import jp.nuits.hatpepper.usecase.Restaurant
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -15,7 +15,7 @@ class GourmetSearchApiImpl : GourmetSearchApi {
             .addConverterFactory(GsonConverterFactory.create())
             .build() }
 
-    override suspend fun find(location: DeviceLocation, lunchTimeOnly : Boolean) : List<Shop> {
+    override suspend fun find(location: DeviceLocation, lunchTimeOnly : Boolean) : List<Restaurant> {
         val retrofitService = retrofit.create(RetrofitGourmetSearchApi::class.java)
         val response =
             retrofitService.search(
@@ -25,7 +25,7 @@ class GourmetSearchApiImpl : GourmetSearchApi {
                 if(lunchTimeOnly) 1 else 0)
         return response.body()!!.results.shop
                 .map {
-                    Shop(
+                    Restaurant(
                         it.id,
                         it.name,
                         it.genre.name,

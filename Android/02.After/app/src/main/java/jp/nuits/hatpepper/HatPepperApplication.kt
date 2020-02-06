@@ -6,9 +6,9 @@ import jp.nuits.hatpepper.infrastructure.location.DeviceLocationProviderImpl
 import jp.nuits.hatpepper.infrastructure.api.GourmetSearchApiImpl
 import jp.nuits.hatpepper.infrastructure.time.TimeProviderImpl
 import jp.nuits.hatpepper.presentation.NearbyShopsViewModel
-import jp.nuits.hatpepper.usecase.FindNearbyShops
+import jp.nuits.hatpepper.usecase.FindNearbyRestaurants
 import jp.nuits.hatpepper.usecase.impl.DeviceLocationProvider
-import jp.nuits.hatpepper.usecase.impl.FindNearbyShopsImpl
+import jp.nuits.hatpepper.usecase.impl.FindNearbyRestaurantsImpl
 import jp.nuits.hatpepper.usecase.impl.GourmetSearchApi
 import jp.nuits.hatpepper.usecase.impl.TimeProvider
 import org.koin.android.ext.koin.androidContext
@@ -24,7 +24,7 @@ val appModule = module {
     single<GourmetSearchApi> { GourmetSearchApiImpl() }
 
     // UseCase
-    single<FindNearbyShops> { FindNearbyShopsImpl(get(), get(), get()) }
+    single<FindNearbyRestaurants> { FindNearbyRestaurantsImpl(get(), get(), get()) }
 
     // ViewModel
     viewModel { NearbyShopsViewModel(get()) }
