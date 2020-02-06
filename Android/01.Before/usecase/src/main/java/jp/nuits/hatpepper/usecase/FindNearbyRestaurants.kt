@@ -3,9 +3,9 @@ package jp.nuits.hatpepper.usecase
 /**
  * ユースケース「最寄りの店舗を探す」
  */
-interface FindNearbyShops {
+interface FindNearbyRestaurants {
     /**
      * 店舗を探す
      */
-    suspend fun find() : List<Shop>
+    suspend fun find() : List<Restaurant>
 }

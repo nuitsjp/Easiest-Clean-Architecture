@@ -3,16 +3,14 @@ package jp.nuits.hatpepper.usecase
 import jp.nuits.hatpepper.infrastructure.api.GourmetSearchApi
 import jp.nuits.hatpepper.infrastructure.location.DeviceLocationProvider
 import jp.nuits.hatpepper.infrastructure.time.TimeProvider
-import jp.nuits.hatpepper.usecase.FindNearbyShops
-import jp.nuits.hatpepper.usecase.Shop
 import org.threeten.bp.LocalDateTime
 
-class FindNearbyShopsImpl(
+class FindNearbyRestaurantsImpl(
     val deviceLocationProvider: DeviceLocationProvider,
     val timeProvider: TimeProvider,
     val gourmetSearchApi: GourmetSearchApi
-) : FindNearbyShops {
-    override suspend fun find(): List<Shop> {
+) : FindNearbyRestaurants {
+    override suspend fun find(): List<Restaurant> {
         // 現在地を取得する
         var deviceLocation = deviceLocationProvider.getDeviceLocation()
 
@@ -24,7 +22,7 @@ class FindNearbyShopsImpl(
 
         return gourmetSearchApi.find(deviceLocation, lunchTime).results.shop
             .map {
-                Shop(
+                Restaurant(
                     it.id,
                     it.name,
                     it.genre.name,

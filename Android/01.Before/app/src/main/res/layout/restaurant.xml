@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.NearbyShopsFragment">
+    tools:context=".presentation.NearbyRestaurantsFragment">
     <data>
-        <variable name="shop" type="jp.nuits.hatpepper.usecase.Shop"/>
+        <variable name="shop" type="jp.nuits.hatpepper.usecase.Restaurant"/>
     </data>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

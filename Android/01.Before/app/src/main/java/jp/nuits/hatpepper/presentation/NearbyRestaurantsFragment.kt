@@ -11,25 +11,25 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import jp.nuits.hatpepper.R
-import jp.nuits.hatpepper.databinding.ShopFragmentBinding
+import jp.nuits.hatpepper.databinding.NearbyRestaurantsFragmentBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class NearbyShopsFragment : Fragment() {
+class NearbyRestaurantsFragment : Fragment() {
 
     private val REQUEST_CODE = 1000
 
-    private val nearbyShopsViewModel: NearbyShopsViewModel by viewModel()
-    private val shopAdapter = ShopAdapter()
-    private lateinit var binding: ShopFragmentBinding
+    private val nearbyRestaurantsViewModel: NearbyRestaurantsViewModel by viewModel()
+    private val restaurantAdapter = RestaurantAdapter()
+    private lateinit var binding: NearbyRestaurantsFragmentBinding
 
     companion object {
-        fun newInstance() = NearbyShopsFragment()
+        fun newInstance() = NearbyRestaurantsFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.shop_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.nearby_restaurants_fragment, container, false)
         binding.apply {
-            shops.adapter = shopAdapter
+            restaurants.adapter = restaurantAdapter
         }
 
         return binding.root
@@ -38,7 +38,7 @@ class NearbyShopsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        observeViewModel(nearbyShopsViewModel)
+        observeViewModel(nearbyRestaurantsViewModel)
 
         if(hasFineLocationPermission()) {
             findShops()
@@ -48,10 +48,10 @@ class NearbyShopsFragment : Fragment() {
     }
 
     //observe開始
-    private fun observeViewModel(viewModel: NearbyShopsViewModel) {
+    private fun observeViewModel(viewModel: NearbyRestaurantsViewModel) {
         viewModel.shops.observe(viewLifecycleOwner, Observer { projects ->
             if (projects != null) {
-                shopAdapter.setShops(projects)
+                restaurantAdapter.setShops(projects)
             }
         })
     }
@@ -72,6 +72,6 @@ class NearbyShopsFragment : Fragment() {
     }
 
     private fun findShops() {
-        nearbyShopsViewModel.findShops()
+        nearbyRestaurantsViewModel.findShops()
     }
 }

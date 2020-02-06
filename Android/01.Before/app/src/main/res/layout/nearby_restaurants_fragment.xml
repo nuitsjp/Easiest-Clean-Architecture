@@ -2,9 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.NearbyShopsFragment">
+    tools:context=".presentation.NearbyRestaurantsFragment">
     <data>
-        <variable name="listViewModel" type="jp.nuits.hatpepper.presentation.NearbyShopsViewModel"/>
+        <variable name="listViewModel" type="jp.nuits.hatpepper.presentation.NearbyRestaurantsViewModel"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_height="match_parent">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/shops"
+                android:id="@+id/restaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
