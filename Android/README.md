@@ -1,25 +1,20 @@
-# .NET Core Console版
+# Android版
 
 コンテンツは以下の通り。
 
-- [PowerPointの原稿を文書化した記事](https://www.nuits.jp/entry/easiest-clean-architecture-2019-09-vsuc)
+- [PowerPointの原稿を文書化した記事](https://www.nuits.jp/entry/easiest-clean-architecture-2019-09)
 - [PowerPointファイル](Easiest-Clean-Architecture-for-Android.pptx)
 - コード：非推奨コードとリファクタリング後のコード
     - [01.Before](01.Before)
     - [02.After](02.After)
 
-## 環境
+## サンプルコードを実行するにあたって
 
-* Windows 10
-* Visual Studio 2019
-* SQL Server 2017 Developer Edition
-* SQL Server SampleDB AndentureWorks 2017
+ホットペッパー様のWeb APIを利用させていただいている関係上、実行するには事前に以下の対応を行う必要があります。
 
-SQL Serverのサンプルデータベース「Adventure Works」を利用しています。いつもお世話になっております。
+1. [APIキーの取得](https://webservice.recruit.co.jp/register/index.html)
+2. APIキーの反映
 
-SQL Serverをインストールしたくない方は、Dockerイメージも公開していますので、こちらをご利用いただくと手軽です。
+### APIキーの反映について
 
-- [SQL ServerのサンプルDB「AdventureWorks」のDockerイメージを公開しました](https://www.nuits.jp/entry/2019/10/08/082935)
-
-なお、細かいバージョンはやや異なっても動く気がします。多分。
-
+infrastructure_apiモジュール内のjp.nuits.hatpepper.infrastructure.api.Secretsへ、取得したキーを適用してください。

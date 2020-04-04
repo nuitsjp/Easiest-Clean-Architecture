@@ -1,4 +1,4 @@
-# .NET Core Console版
+# .NET Core Console版（コード以外はAndroid版を推奨）
 
 コンテンツは以下の通り。
 
