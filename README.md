@@ -1,39 +1,16 @@
 # 世界一わかりやすいClean Architecture
 
-[Visual Studio Users Community Japan](https://vsuc.connpass.com/event/143114/)にて発表した
-
-- 「世界一わかりやすいClean Architecture」
-
-の資料です。
+Clean Architectureの解説用PowerPointと、サンプルコードを公開しています。
 
 本資料はコード、スライドともにCreative Commons Public Licenses「CC BY-SA 4.0」の元公開しています。
 
 修正や商用含め利用いただいて問題ありませんが詳細は以下のリンクをご覧ください。
 
-[https://creativecommons.org/licenses/by-sa/4.0/deed.ja](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
+- [https://creativecommons.org/licenses/by-sa/4.0/deed.ja](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 
-## 解説資料
+資料は以下の2種類があります。
 
-以下の記事も参照ください。
+- [Androidアプリケーションベースの解説](Android/README.md)
+- [.NET Core Consoleアプリケーションベースの解説](DotNetConsole/README.md)
 
-[https://www.nuits.jp/entry/easiest-clean-architecture-2019-09](https://www.nuits.jp/entry/easiest-clean-architecture-2019-09)
-
-## コード
-
-以下のフォルダにそれぞれ
-
-- 01.Before：非クリーンなアーキテクチャ
-- 02.After：クリーンなアーキテクチャ
-
-という感じで置いてあります。
-
-## 環境
-
-SQL Serverのサンプルデータベース「Adventure Works」を利用しています。いつもお世話になっております。
-
-* Windows 10
-* Visual Studio 2019
-* SQL Server 2017 Developer Edition
-* SQL Server SampleDB AndentureWorks 2017
-
-細かいバージョンはやや異なっても動く気がします。多分。
+前者の資料が現時点では最新ですので、コード以外はAndroid版を参考にされることをお勧めいたします。
