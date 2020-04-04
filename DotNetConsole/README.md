@@ -3,7 +3,7 @@
 コンテンツは以下の通り。
 
 - [PowerPointの原稿を文書化した記事](https://www.nuits.jp/entry/easiest-clean-architecture-2019-09-vsuc)
-- [PowerPointファイル](Easiest-Clean-Architecture-for-DotNetConsole.pptx)
+- [PowerPointファイル](https://raw.githubusercontent.com/nuitsjp/Easiest-Clean-Architecture/master/DotNetConsole/Easiest-Clean-Architecture-for-DotNetConsole.pptx)
 - コード：非推奨コードとリファクタリング後のコード
     - [01.Before](01.Before)
     - [02.After](02.After)
