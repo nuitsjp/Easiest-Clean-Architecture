@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Search.App.Domain\HatPepper.Search.App.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Search.App.UseCase\HatPepper.Search.App.UseCase.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.App.View\HatPepper.Search.App.View.csproj" />
+  </ItemGroup>
+
 </Project>
