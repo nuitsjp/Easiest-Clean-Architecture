@@ -1,6 +1,6 @@
-﻿using HatPepper.Booking.App.Domain;
+﻿using HatPepper.Search.App.Domain;
 
-namespace HatPepper.Booking.Gateway.Device;
+namespace HatPepper.Search.Gateway.Device;
 
 /// <summary>
 /// 端末の位置情報を取得する

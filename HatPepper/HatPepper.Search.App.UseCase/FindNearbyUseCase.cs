@@ -1,6 +1,6 @@
-﻿using HatPepper.Booking.App.Domain;
+﻿using HatPepper.Search.App.Domain;
 
-namespace HatPepper.Booking.App.UseCase;
+namespace HatPepper.Search.App.UseCase;
 
     /// <summary>
 /// 近隣検索ユースケース

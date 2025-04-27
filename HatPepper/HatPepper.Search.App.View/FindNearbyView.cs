@@ -1,7 +1,7 @@
 ﻿using FluentTextTable;
-using HatPepper.Booking.App.Domain;
+using HatPepper.Search.App.Domain;
 
-namespace HatPepper.Booking.App.View;
+namespace HatPepper.Search.App.View;
 
 /// <summary>
 /// 店舗検索ビュー

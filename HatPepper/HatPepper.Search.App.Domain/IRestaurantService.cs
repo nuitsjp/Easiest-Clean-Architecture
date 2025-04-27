@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Booking.App.Domain;
+﻿namespace HatPepper.Search.App.Domain;
 
 public interface IRestaurantService
 {

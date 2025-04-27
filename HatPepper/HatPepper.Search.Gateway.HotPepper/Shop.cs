@@ -1,7 +1,7 @@
 ﻿
 using System.Text.Json.Serialization;
 
-namespace HatPepper.Booking.Gateway.HotPepper;
+namespace HatPepper.Search.Gateway.HotPepper;
 
 /// <summary>
 /// 店舗

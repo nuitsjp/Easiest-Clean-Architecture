@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
-using HatPepper.Booking.App.Domain;
+using HatPepper.Search.App.Domain;
 
-namespace HatPepper.Booking.Gateway.HotPepper;
+namespace HatPepper.Search.Gateway.HotPepper;
 
 /// <summary>
 /// グルメサーチAPIクライアント

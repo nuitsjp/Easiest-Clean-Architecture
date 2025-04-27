@@ -1,7 +1,7 @@
-﻿using HatPepper.Booking.App.UseCase;
-using HatPepper.Booking.App.View;
+﻿using HatPepper.Search.App.UseCase;
+using HatPepper.Search.App.View;
 
-namespace HatPepper.Booking.App.Controller;
+namespace HatPepper.Search.App.Controller;
 
 /// <summary>
 /// 近隣の店舗を検索する。
