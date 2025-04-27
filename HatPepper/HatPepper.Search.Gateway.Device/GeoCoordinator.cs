@@ -1,6 +1,4 @@
-﻿using HatPepper.Search.App.Domain;
-
-namespace HatPepper.Search.Gateway.Device;
+﻿namespace HatPepper.Search.Gateway.Device;
 
 /// <summary>
 /// 端末の位置情報を取得する

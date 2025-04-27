@@ -1,6 +1,6 @@
 ﻿using UnitGenerator;
 
-namespace HatPepper.App.Domain;
+namespace HatPepper;
 
 [UnitOf<string>]
 public partial struct RestaurantId

@@ -1,8 +1,8 @@
-﻿using HatPepper.Search.App.Controller;
-using HatPepper.Search.App.UseCase;
-using HatPepper.Search.App.View;
+﻿using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
+using HatPepper.Search.UseCase;
+using HatPepper.Search.View;
 
 if(args.Length == 0)
 {

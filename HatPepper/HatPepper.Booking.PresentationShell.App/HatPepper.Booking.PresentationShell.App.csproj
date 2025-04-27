@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HatPepper.Booking.App.Controller\HatPepper.Booking.App.Controller.csproj" />
-    <ProjectReference Include="..\HatPepper.Booking.Gateway.Device\HatPepper.Booking.Gateway.Device.csproj" />
-    <ProjectReference Include="..\HatPepper.Booking.Gateway.HotPepper\HatPepper.Booking.Gateway.HotPepper.csproj" />
-    <ProjectReference Include="..\HatPepper.Search.App.Controller\HatPepper.Search.App.Controller.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.Controller\HatPepper.Search.Controller.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.UseCase\HatPepper.Search.UseCase.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.View\HatPepper.Search.View.csproj" />
+    <ProjectReference Include="..\HatPepper.Search\HatPepper.Search.csproj" />
   </ItemGroup>
 
 </Project>

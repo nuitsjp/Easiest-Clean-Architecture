@@ -1,6 +1,4 @@
-﻿using HatPepper.Search.App.Domain;
-
-namespace HatPepper.Search.App.View;
+﻿namespace HatPepper.Search.View;
 
 public record RestaurantViewModel(int No, Restaurant Restaurant)
 {

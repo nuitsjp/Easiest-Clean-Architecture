@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search.App.Domain;
+﻿namespace HatPepper.Search;
 
 public interface IGeoCoordinator
 {

@@ -1,6 +1,4 @@
-﻿using HatPepper.Search.App.Domain;
-
-namespace HatPepper.Search.App.UseCase;
+﻿namespace HatPepper.Search.UseCase;
 
 /// <summary>
 /// 近隣検索ユースケース

@@ -1,8 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using HatPepper.Search.App.UseCase;
-using HatPepper.Search.App.View;
+﻿using HatPepper.Search.UseCase;
+using HatPepper.Search.View;
 
-namespace HatPepper.Search.App.Controller;
+namespace HatPepper.Search.Controller;
 
 /// <summary>
 /// 近隣の店舗を検索する。

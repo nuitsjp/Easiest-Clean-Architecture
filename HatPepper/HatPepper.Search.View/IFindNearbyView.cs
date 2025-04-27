@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search.App.View;
+﻿namespace HatPepper.Search.View;
 
 /// <summary>
 /// 店舗検索ビュー
