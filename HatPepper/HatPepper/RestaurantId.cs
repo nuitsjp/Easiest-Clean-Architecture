@@ -3,7 +3,4 @@
 namespace HatPepper;
 
 [UnitOf<string>]
-public partial struct RestaurantId
-{
-
-}
+public partial struct RestaurantId;
