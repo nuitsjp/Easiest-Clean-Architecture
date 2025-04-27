@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Booking.App.Controller\HatPepper.Booking.App.Controller.csproj" />
+    <ProjectReference Include="..\HatPepper.Booking.Gateway.Device\HatPepper.Booking.Gateway.Device.csproj" />
+    <ProjectReference Include="..\HatPepper.Booking.Gateway.HotPepper\HatPepper.Booking.Gateway.HotPepper.csproj" />
+  </ItemGroup>
+
 </Project>
