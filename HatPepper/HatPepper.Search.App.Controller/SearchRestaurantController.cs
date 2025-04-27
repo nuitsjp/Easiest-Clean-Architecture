@@ -1,4 +1,5 @@
-﻿using HatPepper.Search.App.UseCase;
+﻿using System.ComponentModel.DataAnnotations;
+using HatPepper.Search.App.UseCase;
 using HatPepper.Search.App.View;
 
 namespace HatPepper.Search.App.Controller;
@@ -15,9 +16,15 @@ public class SearchRestaurantController(IFindNearbyUseCase useCase, IFindNearbyV
     public async Task NearbyViewAsync()
     {
         // 名称で店舗を検索する。
-        var shops = await useCase.FindNearbyAsync();
+        var restaurants = await useCase.FindNearbyAsync();
+        var viewModels = restaurants
+            .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
+            .ToList();
 
         // 検索結果を表示する。
-        view.Show(shops);
+        view.Show(viewModels);
+
+        // 店舗を選択する。
+        var restaurant = view.SelectRestaurant(viewModels);
     }
 }

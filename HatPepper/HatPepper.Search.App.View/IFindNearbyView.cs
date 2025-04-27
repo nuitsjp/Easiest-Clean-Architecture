@@ -1,6 +1,4 @@
-﻿using HatPepper.Search.App.Domain;
-
-namespace HatPepper.Search.App.View;
+﻿namespace HatPepper.Search.App.View;
 
 /// <summary>
 /// 店舗検索ビュー
@@ -11,5 +9,12 @@ public interface IFindNearbyView
     /// 検索結果を表示する。
     /// </summary>
     /// <param name="restaurants"></param>
-    void Show(IEnumerable<Restaurant> restaurants);
+    void Show(IEnumerable<RestaurantViewModel> restaurants);
+
+
+    /// <summary>
+    /// レストランを選択する。
+    /// </summary>
+    /// <param name="restaurants"></param>
+    RestaurantViewModel SelectRestaurant(IEnumerable<RestaurantViewModel> restaurants);
 }
