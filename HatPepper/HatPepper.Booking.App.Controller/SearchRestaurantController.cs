@@ -6,13 +6,13 @@ namespace HatPepper.Booking.App.Controller;
 /// <summary>
 /// 近隣の店舗を検索する。
 /// </summary>
-public class FindNearbyController(IFindNearbyUseCase useCase, IFindNearbyView view) 
+public class SearchRestaurantController(IFindNearbyUseCase useCase, IFindNearbyView view) 
 {
     /// <summary>
     /// 近隣の店舗を検索する。
     /// </summary>
     /// <returns></returns>
-    public async Task RunAsync()
+    public async Task NearbyViewAsync()
     {
         // 名称で店舗を検索する。
         var shops = await useCase.FindNearbyAsync();

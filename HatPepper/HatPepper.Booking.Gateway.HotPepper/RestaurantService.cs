@@ -6,7 +6,7 @@ namespace HatPepper.Booking.Gateway.HotPepper;
 /// <summary>
 /// グルメサーチAPIクライアント
 /// </summary>
-public class GourmetService : IGourmetService
+public class RestaurantService : IRestaurantService
 {
     /// <summary>
     /// APIのエンドポイント
@@ -26,7 +26,7 @@ public class GourmetService : IGourmetService
     /// <summary>
     /// 指定された名称の店舗情報を取得する。
     /// </summary>
-    public async Task<IReadOnlyList<Restaurant>> FindNearbyAsync(Location currentLocation)
+    public async Task<IReadOnlyList<Restaurant>> SearchAsync(Location currentLocation)
     {
         // リクルート WEBサービスのグルメサーチAPIを利用し、周辺のレストラン情報を取得する
         // Web APIを呼び出しJSONで結果を取得した後、Json.NETを利用してオブジェクト化する

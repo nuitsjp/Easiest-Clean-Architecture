@@ -5,7 +5,7 @@ namespace HatPepper.Booking.App.UseCase;
     /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public class FindNearbyUseCase(IGeoCoordinator geoCoordinator, IGourmetService gourmetService) 
+public class FindNearbyUseCase(IGeoCoordinator geoCoordinator, IRestaurantService restaurantService) 
         : IFindNearbyUseCase
 {
     /// <summary>
@@ -17,6 +17,6 @@ public class FindNearbyUseCase(IGeoCoordinator geoCoordinator, IGourmetService g
         var location = geoCoordinator.GetCurrent();
 
         // 現在地から店舗を検索する。
-        return await gourmetService.FindNearbyAsync(location);
+        return await restaurantService.SearchAsync(location);
     }
 }
