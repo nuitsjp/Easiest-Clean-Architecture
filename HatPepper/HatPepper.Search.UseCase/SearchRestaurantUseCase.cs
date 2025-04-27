@@ -3,8 +3,8 @@
     /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public class FindNearbyUseCase(IGeoCoordinator geoCoordinator, IRestaurantService restaurantService) 
-        : IFindNearbyUseCase
+public class SearchRestaurantUseCase(IGeoCoordinator geoCoordinator, ISearchRestaurantService searchRestaurantService) 
+        : ISearchRestaurantUseCase
 {
     /// <summary>
     /// 現在地の近隣店舗を検索する。
@@ -15,6 +15,6 @@ public class FindNearbyUseCase(IGeoCoordinator geoCoordinator, IRestaurantServic
         var location = geoCoordinator.GetCurrent();
 
         // 現在地から店舗を検索する。
-        return await restaurantService.SearchAsync(location);
+        return await searchRestaurantService.SearchAsync(location);
     }
 }

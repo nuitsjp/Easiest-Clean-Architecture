@@ -6,7 +6,7 @@ namespace HatPepper.Search.View;
 /// <summary>
 /// 店舗検索ビュー
 /// </summary>
-public class FindNearbyView : IFindNearbyView
+public class SearchRestaurantView : ISearchRestaurantView
 {
     /// <summary>
     /// 検索結果を表示する。

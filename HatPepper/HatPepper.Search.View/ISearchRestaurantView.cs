@@ -3,7 +3,7 @@
 /// <summary>
 /// 店舗検索ビュー
 /// </summary>
-public interface IFindNearbyView
+public interface ISearchRestaurantView
 {
     /// <summary>
     /// 検索結果を表示する。

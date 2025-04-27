@@ -3,7 +3,7 @@
 /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public interface IFindNearbyUseCase
+public interface ISearchRestaurantUseCase
 {
     /// <summary>
     /// 現在地の近隣店舗を検索する。

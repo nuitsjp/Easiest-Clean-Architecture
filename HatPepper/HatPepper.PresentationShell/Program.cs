@@ -10,11 +10,11 @@ if (args.Length == 0)
     return;
 }
 
-RestaurantService.ApiKey = args[0];
+SearchRestaurantService.ApiKey = args[0];
 
 SearchRestaurantController controller = new SearchRestaurantController(
-    new FindNearbyUseCase(
+    new SearchRestaurantUseCase(
         new GeoCoordinator(),
-        new RestaurantService()),
-    new FindNearbyView());
+        new SearchRestaurantService()),
+    new SearchRestaurantView());
 await controller.NearbyViewAsync();
