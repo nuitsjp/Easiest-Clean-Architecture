@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using HatPepper.App.Domain;
 using HatPepper.Search.App.Domain;
 
 namespace HatPepper.Search.Gateway.HotPepper;
@@ -41,7 +42,7 @@ public class RestaurantService : IRestaurantService
         return JsonSerializer.Deserialize<GourmetSearchResult>(json)!
             .Results
             .Shops
-            .Select(x => new Restaurant(x.Genre.Name, x.Name))
+            .Select(x => new Restaurant((RestaurantId)x.Id, x.Genre.Name, x.Name))
             .ToArray();
     }
 }

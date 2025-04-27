@@ -9,5 +9,6 @@ namespace HatPepper.Search.Gateway.HotPepper;
 /// <param name="Name">名称</param>
 /// <param name="Genre">ジャンル</param>
 public record Shop(
+    [property: JsonPropertyName("id")] string Id,
     [property: JsonPropertyName("name")] string Name,
     [property: JsonPropertyName("genre")] Genre Genre);

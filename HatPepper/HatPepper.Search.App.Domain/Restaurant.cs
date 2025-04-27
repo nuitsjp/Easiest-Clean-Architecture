@@ -1,3 +1,5 @@
-﻿namespace HatPepper.Search.App.Domain;
+﻿using HatPepper.App.Domain;
 
-public record Restaurant(string Genre, string Name);
+namespace HatPepper.Search.App.Domain;
+
+public record Restaurant(RestaurantId Id, string Genre, string Name);

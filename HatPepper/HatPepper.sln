@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HatPepper.Search", "HatPepper.Search", "{DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Booking", "Booking", "{1B181EC5-105C-4B68-BA85-4570E741F536}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HatPepper.Booking", "HatPepper.Booking", "{1B181EC5-105C-4B68-BA85-4570E741F536}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Booking.App.View", "HatPepper.Booking.App.View\HatPepper.Booking.App.View.csproj", "{D98E1C7B-2C9D-4DBC-B524-80EB20D72DA0}"
 EndProject
@@ -28,11 +28,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.App.View",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Gateway.HotPepper", "HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj", "{C869064A-D7BE-410D-8E02-B51C33A9F8E4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationShell", "PresentationShell", "{4A4E1EC5-7D16-435D-9B11-91FD08BB0F5F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HatPepper", "HatPepper", "{4A4E1EC5-7D16-435D-9B11-91FD08BB0F5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Booking.PresentationShell.App", "HatPepper.Booking.PresentationShell.App\HatPepper.Booking.PresentationShell.App.csproj", "{C92A2342-0D9E-4D5B-B820-08D7ECB6C2AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Gateway.Device", "HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj", "{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.App.Domain", "HatPepper.App.Domain\HatPepper.App.Domain.csproj", "{938AE281-A205-4255-9EE2-36792AFF7627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938AE281-A205-4255-9EE2-36792AFF7627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938AE281-A205-4255-9EE2-36792AFF7627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938AE281-A205-4255-9EE2-36792AFF7627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938AE281-A205-4255-9EE2-36792AFF7627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{C869064A-D7BE-410D-8E02-B51C33A9F8E4} = {DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}
 		{C92A2342-0D9E-4D5B-B820-08D7ECB6C2AC} = {4A4E1EC5-7D16-435D-9B11-91FD08BB0F5F}
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4} = {DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}
+		{938AE281-A205-4255-9EE2-36792AFF7627} = {4A4E1EC5-7D16-435D-9B11-91FD08BB0F5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EF52D99-FFA7-452E-B2C5-53DC40EDD55F}
