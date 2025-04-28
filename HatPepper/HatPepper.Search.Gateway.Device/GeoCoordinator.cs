@@ -8,9 +8,9 @@ public class GeoCoordinator : IGeoCoordinator
     /// <summary>
     /// 現在地を取得する
     /// </summary>
-    public Location GetCurrent()
+    public Task<Location> GetCurrentAsync()
     {
-        // 東京駅の緯度・経度を返却する
-        return new Location(35.6809591d, 139.7673068d);
+        // 現在地を取得する
+        return Task.FromResult(new Location(35.6809591d, 139.7673068d));
     }
 }

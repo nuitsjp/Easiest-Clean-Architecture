@@ -2,5 +2,5 @@
 
 public interface IGeoCoordinator
 {
-    Location GetCurrent();
+    Task<Location> GetCurrentAsync();
 }

@@ -9,12 +9,15 @@ public class SearchRestaurantUseCase(IGeoCoordinator geoCoordinator, ISearchRest
     /// <summary>
     /// 現在地の近隣店舗を検索する。
     /// </summary>
-    public IAsyncEnumerable<Restaurant> FindNearbyAsync()
+    public async IAsyncEnumerable<Restaurant> FindNearbyAsync()
     {
         // 現在地を取得する。
-        var location = geoCoordinator.GetCurrent();
+        var location = await geoCoordinator.GetCurrentAsync();
 
         // 現在地から店舗を検索する。
-        return searchRestaurantService.SearchAsync(location);
+        await foreach (var restaurant in searchRestaurantService.SearchAsync(location))
+        {
+            yield return restaurant;
+        }
     }
 }
