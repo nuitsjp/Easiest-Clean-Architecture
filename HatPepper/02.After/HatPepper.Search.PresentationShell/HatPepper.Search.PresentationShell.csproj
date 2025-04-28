@@ -13,6 +13,7 @@
     <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
     <ProjectReference Include="..\HatPepper.Search.UseCase\HatPepper.Search.UseCase.csproj" />
     <ProjectReference Include="..\HatPepper.Search.View\HatPepper.Search.View.csproj" />
+    <ProjectReference Include="..\HatPepper.Search\HatPepper.Search.csproj" />
   </ItemGroup>
 
 </Project>
