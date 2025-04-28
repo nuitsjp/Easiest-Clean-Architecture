@@ -17,7 +17,7 @@ public class SearchRestaurantService(IGeoCoordinator geoCoordinator, IRestaurant
         var location = await geoCoordinator.GetCurrentAsync();
 
         // 現在地から店舗を検索する。
-        await foreach (var restaurant in restaurantRepository.SearchAsync(location))
+        await foreach (var restaurant in restaurantRepository.FindNearbyAsync(location))
         {
             yield return restaurant;
         }

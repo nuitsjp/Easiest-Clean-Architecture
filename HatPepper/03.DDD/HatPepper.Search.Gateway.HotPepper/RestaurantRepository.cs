@@ -26,7 +26,7 @@ public class RestaurantRepository : IRestaurantRepository
     /// <summary>
     /// 指定された名称の店舗情報を取得する。
     /// </summary>
-    public async IAsyncEnumerable<Restaurant> SearchAsync(Location currentLocation)
+    public async IAsyncEnumerable<Restaurant> FindNearbyAsync(Location currentLocation)
     {
         // リクルート WEBサービスのグルメサーチAPIを利用し、周辺のレストラン情報を取得する
         // Web APIを呼び出しJSONで結果を取得した後、Json.NETを利用してオブジェクト化する
