@@ -7,7 +7,7 @@ namespace HatPepper.Search.Application;
     /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public class SearchRestaurant : ISearchRestaurant
+public class SearchRestaurant
 {
     /// <summary>
     /// 現在地の近隣店舗を検索する。

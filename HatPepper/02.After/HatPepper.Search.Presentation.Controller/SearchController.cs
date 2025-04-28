@@ -12,7 +12,7 @@ public class SearchController(ISearchRestaurant searchRestaurant, ISearchRestaur
     /// 近隣の店舗を検索する。
     /// </summary>
     /// <returns></returns>
-    public async Task SelectAsync()
+    public async Task FindNearbyAsync()
     {
         // 近隣の店舗を検索する。
         var restaurants = searchRestaurant.FindNearbyAsync();

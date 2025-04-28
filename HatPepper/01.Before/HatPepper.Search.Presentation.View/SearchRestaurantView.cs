@@ -5,7 +5,7 @@ namespace HatPepper.Search.Presentation.View;
 /// <summary>
 /// 店舗検索の結果表示および選択操作を提供するビュークラスです。
 /// </summary>
-public class SearchRestaurantView : ISearchRestaurantView
+public class SearchRestaurantView
 {
     /// <summary>
     /// レストランの検索結果一覧をテーブル形式で表示します。

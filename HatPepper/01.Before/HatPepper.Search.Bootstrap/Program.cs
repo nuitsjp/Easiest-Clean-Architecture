@@ -1,8 +1,5 @@
-﻿using HatPepper.Search.Application;
-using HatPepper.Search.Gateway.Device;
-using HatPepper.Search.Gateway.HotPepper;
+﻿using HatPepper.Search.Gateway.HotPepper;
 using HatPepper.Search.Presentation.Controller;
-using HatPepper.Search.Presentation.View;
 
 // このプログラムはコマンドライン引数でAPIキーを受け取り、
 // HatPepperの検索および予約機能を統合的に実行します。
@@ -21,10 +18,7 @@ RestaurantRepository.ApiKey = args[0];
 
 // 各コントローラーおよびユースケース、ゲートウェイ、ビューのインスタンスを生成し、
 // アプリケーション全体のコントローラーを構築します。
-var controller =
-    new SearchController(
-        new SearchRestaurant(),
-        new SearchRestaurantView());
+var controller = new SearchController();
 
-// レストラン予約処理を非同期で開始します。
-await controller.SelectAsync();
+// 近隣の店舗を検索し、結果を表示します。
+await controller.FindNearbyAsync();

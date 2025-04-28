@@ -28,5 +28,5 @@ var controller =
             new RestaurantRepository()),
         new SearchRestaurantView());
 
-// レストラン予約処理を非同期で開始します。
-await controller.SelectAsync();
+// 近隣の店舗を検索し、結果を表示します。
+await controller.FindNearbyAsync();
