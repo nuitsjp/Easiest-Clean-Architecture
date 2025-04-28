@@ -1,5 +1,4 @@
-﻿using HatPepper.Controller;
-using HatPepper.Search.Controller;
+﻿using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
 using HatPepper.Search.UseCase;
@@ -23,17 +22,11 @@ SearchService.ApiKey = args[0];
 // 各コントローラーおよびユースケース、ゲートウェイ、ビューのインスタンスを生成し、
 // アプリケーション全体のコントローラーを構築します。
 var controller =
-    new HatPepperController(
-        new SearchController(
-            new SearchRestaurantUseCase(
-                new GeoCoordinator(),
-                new SearchService()),
-            new SearchRestaurantView()),
-        new ReservationController(
-            new ReservationUseCase(
-                new ReservationService()),
-            new ReservationView()
-        ));
+    new SearchController(
+        new SearchRestaurantUseCase(
+            new GeoCoordinator(),
+            new SearchService()),
+        new SearchRestaurantView());
 
 // レストラン予約処理を非同期で開始します。
-await controller.ReserveRestaurantAsync();
+await controller.FindNearbyAsync();
