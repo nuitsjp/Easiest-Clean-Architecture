@@ -18,7 +18,7 @@ public class SearchRestaurant
         var location = await geoCoordinator.GetCurrentAsync();
 
         // 現在地から店舗を検索する。
-        var restaurantRepository = new RestaurantRepository();
+        var restaurantRepository = new GourmetSearchApi();
         return await restaurantRepository.FindNearbyAsync(location);
     }
 }
