@@ -1,6 +1,6 @@
 ﻿using UnitGenerator;
 
-namespace HatPepper;
+namespace HatPepper.Search;
 
 /// <summary>
 /// レストランを識別するための一意な識別子を表す構造体です。

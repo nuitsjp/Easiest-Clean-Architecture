@@ -1,5 +1,4 @@
 ﻿using FluentTextTable;
-using Sharprompt;
 
 namespace HatPepper.Search.View;
 
