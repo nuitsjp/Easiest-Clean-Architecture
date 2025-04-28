@@ -6,4 +6,4 @@
 /// <param name="Id">一意のレストラン識別子です。</param>
 /// <param name="Genre">レストランのジャンル情報です。</param>
 /// <param name="Name">レストランの名称です。nullや空文字列であってはなりません。</param>
-public record Restaurant(RestaurantId Id, Genre Genre, string Name);
+public record Restaurant(RestaurantId Id, string Genre, string Name);

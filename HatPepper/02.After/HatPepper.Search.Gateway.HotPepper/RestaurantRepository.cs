@@ -41,7 +41,7 @@ public class RestaurantRepository : IRestaurantRepository
         foreach (var shop in JsonSerializer.Deserialize<GourmetSearchResult>(json)!.Results.Shops)
         {
             // 店舗情報を返す。
-            yield return new Restaurant((RestaurantId)shop.Id, (Search.Domain.Genre)shop.Genre.Name, shop.Name);
+            yield return new Restaurant((RestaurantId)shop.Id, shop.Genre.Name, shop.Name);
         }
     }
 }

@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HatPepper.Search.Application\HatPepper.Search.Application.csproj" />
-    <ProjectReference Include="..\HatPepper.Search.Domain\HatPepper.Search.Domain.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Presentation.View\HatPepper.Search.Presentation.View.csproj" />
   </ItemGroup>
 

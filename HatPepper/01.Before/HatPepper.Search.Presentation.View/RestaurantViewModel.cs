@@ -1,6 +1,4 @@
-﻿using HatPepper.Search.Domain;
-
-namespace HatPepper.Search.Presentation.View;
+﻿namespace HatPepper.Search.Presentation.View;
 
 /// <summary>
 /// レストラン情報を検索結果表示用にラップするViewModelです。

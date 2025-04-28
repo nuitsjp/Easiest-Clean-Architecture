@@ -1,5 +1,4 @@
-﻿using HatPepper.Search.Domain;
-using HatPepper.Search.Gateway.Device;
+﻿using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
 
 namespace HatPepper.Search.Application;

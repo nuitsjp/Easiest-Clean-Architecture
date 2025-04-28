@@ -23,13 +23,13 @@ public class SearchController(ISearchRestaurant searchRestaurant, ISearchRestaur
         // VewModelに変換する。
         var restaurantViewModels =
             await restaurants
-                .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
+                .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant.Id, restaurant.Genre, restaurant.Name))
                 .ToArrayAsync();
 
         // 検索結果を表示する。
         view.Show(restaurantViewModels);
 
         // 店舗を選択する。
-        return view.SelectRestaurant(restaurantViewModels).Restaurant.Id;
+        return view.SelectRestaurant(restaurantViewModels).Id;
     }
 }
