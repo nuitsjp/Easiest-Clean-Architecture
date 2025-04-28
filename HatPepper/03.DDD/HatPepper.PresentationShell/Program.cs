@@ -1,8 +1,8 @@
 ﻿using HatPepper.Controller;
 using HatPepper.Reservation.Application;
-using HatPepper.Reservation.Controller;
 using HatPepper.Reservation.Gateway.HotPepper;
-using HatPepper.Reservation.View;
+using HatPepper.Reservation.Presentation.Controller;
+using HatPepper.Reservation.Presentation.View;
 using HatPepper.Search.Application;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;

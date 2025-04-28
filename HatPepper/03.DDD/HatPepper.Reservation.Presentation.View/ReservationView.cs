@@ -1,7 +1,7 @@
 ﻿using HatPepper.Reservation.Domain;
 using Sharprompt;
 
-namespace HatPepper.Reservation.View;
+namespace HatPepper.Reservation.Presentation.View;
 
 /// <summary>
 /// レストラン予約フローにおけるユーザーインターフェース処理を実装するクラスです。

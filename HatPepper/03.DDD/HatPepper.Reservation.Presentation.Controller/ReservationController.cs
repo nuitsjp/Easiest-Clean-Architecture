@@ -1,8 +1,8 @@
 ﻿using HatPepper.Controller;
 using HatPepper.Reservation.Application;
-using HatPepper.Reservation.View;
+using HatPepper.Reservation.Presentation.View;
 
-namespace HatPepper.Reservation.Controller;
+namespace HatPepper.Reservation.Presentation.Controller;
 
 /// <summary>
 /// レストラン予約処理を担当するコントローラーです。
