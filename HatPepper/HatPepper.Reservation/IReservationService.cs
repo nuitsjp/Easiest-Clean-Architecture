@@ -5,7 +5,7 @@
 /// </summary>
 public interface IReservationService
 {
-    IReadOnlyList<TimeSlot> GetAvailableTimeSlots(RestaurantId restaurantId, Date date, int partySize);
+    IAsyncEnumerable<TimeSlot> GetAvailableTimeSlotsAsync(RestaurantId restaurantId, Date date, int partySize);
 
-    ReservationStatus Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize);
+    Task ReserveAsync(RestaurantId restaurantId, TimeSlot timeSlot, int partySize);
 }

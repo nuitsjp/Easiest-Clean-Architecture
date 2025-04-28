@@ -19,4 +19,9 @@ public class ReservationView : IReservationView
 
         return TimeSlot.Parse(timeSlot, format);
     }
+
+    public void NotifySuccess()
+    {
+        Console.WriteLine("予約が完了しました。");
+    }
 }

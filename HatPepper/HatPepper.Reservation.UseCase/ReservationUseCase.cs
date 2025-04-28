@@ -2,9 +2,9 @@
 
 public class ReservationUseCase(IReservationService reservationService) : IReservationUseCase
 {
-    public IReadOnlyList<TimeSlot> GetAvailableTimeSlots(RestaurantId restaurantId, Date date, int partySize)
-        => reservationService.GetAvailableTimeSlots(restaurantId, date, partySize);
+    public IAsyncEnumerable<TimeSlot> GetAvailableTimeSlotsAsync(RestaurantId restaurantId, Date date, int partySize)
+        => reservationService.GetAvailableTimeSlotsAsync(restaurantId, date, partySize);
 
-    public ReservationStatus Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
-        => reservationService.Reserve(restaurantId, timeSlot, partySize);
+    public Task ReserveAsync(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
+        => reservationService.ReserveAsync(restaurantId, timeSlot, partySize);
 }

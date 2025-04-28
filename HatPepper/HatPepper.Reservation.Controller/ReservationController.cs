@@ -13,11 +13,12 @@ public class ReservationController(
     {
         var partySize = reservationView.InputPartySize();
 
-        var timeSlots =
-            reservationUseCase.GetAvailableTimeSlots(restaurantId, Date.Today, partySize);
+        var timeSlots = await reservationUseCase
+            .GetAvailableTimeSlotsAsync(restaurantId, Date.Today, partySize)
+            .ToListAsync();
 
         var timeSlot = reservationView.SelectTimeSlot(timeSlots);
 
-        reservationUseCase.Reserve(restaurantId, timeSlot, partySize);
+        await reservationUseCase.ReserveAsync(restaurantId, timeSlot, partySize);
     }
 }
