@@ -2,5 +2,5 @@
 
 public interface IBookingController
 {
-    Task BookingAsync(RestaurantId restaurantId);
+    Task ReserveAsync(RestaurantId restaurantId);
 }

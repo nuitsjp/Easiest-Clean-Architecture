@@ -10,6 +10,6 @@ public class HatPepperController(
         var restaurantId = await searchController.SelectAsync();
 
         // 店舗を予約する。
-        await bookingController.BookingAsync(restaurantId);
+        await bookingController.ReserveAsync(restaurantId);
     }
 }
