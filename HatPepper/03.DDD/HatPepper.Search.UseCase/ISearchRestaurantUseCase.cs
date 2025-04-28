@@ -1,0 +1,12 @@
+﻿namespace HatPepper.Search.UseCase;
+
+/// <summary>
+/// 近隣検索ユースケース
+/// </summary>
+public interface ISearchRestaurantUseCase
+{
+    /// <summary>
+    /// 現在地の近隣店舗を検索する。
+    /// </summary>
+    IAsyncEnumerable<Restaurant> FindNearbyAsync();
+}
