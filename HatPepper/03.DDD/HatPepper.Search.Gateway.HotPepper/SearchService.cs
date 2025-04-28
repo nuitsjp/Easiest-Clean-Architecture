@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using HatPepper.Search.Domain;
 
 namespace HatPepper.Search.Gateway.HotPepper;
 
@@ -40,7 +41,7 @@ public class SearchService : ISearchService
         foreach (var shop in JsonSerializer.Deserialize<GourmetSearchResult>(json)!.Results.Shops)
         {
             // 店舗情報を返す。
-            yield return new Restaurant((RestaurantId)shop.Id, (Search.Genre)shop.Genre.Name, shop.Name);
+            yield return new Restaurant((RestaurantId)shop.Id, (Search.Domain.Genre)shop.Genre.Name, shop.Name);
         }
     }
 }

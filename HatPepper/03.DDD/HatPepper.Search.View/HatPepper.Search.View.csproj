@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HatPepper.Search\HatPepper.Search.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.Domain\HatPepper.Search.Domain.csproj" />
   </ItemGroup>
 
 </Project>

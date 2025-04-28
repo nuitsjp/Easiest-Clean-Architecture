@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search;
+﻿namespace HatPepper.Search.Domain;
 
 /// <summary>
 /// レストランの基本情報を不変的に保持するレコードです。

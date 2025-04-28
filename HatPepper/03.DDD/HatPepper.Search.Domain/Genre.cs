@@ -1,6 +1,6 @@
 ﻿using UnitGenerator;
 
-namespace HatPepper.Search;
+namespace HatPepper.Search.Domain;
 
 /// <summary>
 /// ジャンルを表す値オブジェクトです。

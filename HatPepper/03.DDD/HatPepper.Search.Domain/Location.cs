@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search;
+﻿namespace HatPepper.Search.Domain;
 
 /// <summary>
 /// 座標情報を表す不変レコードです。

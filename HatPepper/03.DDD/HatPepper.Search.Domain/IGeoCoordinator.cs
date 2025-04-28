@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search;
+﻿namespace HatPepper.Search.Domain;
 
 /// <summary>
 /// 現在地の座標情報を取得するためのインターフェースです。

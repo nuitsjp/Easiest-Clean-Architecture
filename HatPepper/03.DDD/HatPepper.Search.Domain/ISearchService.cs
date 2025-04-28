@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search;
+﻿namespace HatPepper.Search.Domain;
 
 /// <summary>
 /// レストラン検索サービスのインターフェースです。
