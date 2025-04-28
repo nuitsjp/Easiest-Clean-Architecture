@@ -1,7 +1,7 @@
 ﻿using FluentTextTable;
 using Sharprompt;
 
-namespace HatPepper.Search.View;
+namespace HatPepper.Search.Presentation.View;
 
 /// <summary>
 /// 店舗検索の結果表示および選択操作を提供するビュークラスです。

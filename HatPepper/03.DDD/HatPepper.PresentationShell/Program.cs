@@ -4,10 +4,10 @@ using HatPepper.Reservation.Gateway.HotPepper;
 using HatPepper.Reservation.UseCase;
 using HatPepper.Reservation.View;
 using HatPepper.Search.Application;
-using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
-using HatPepper.Search.View;
+using HatPepper.Search.Presentation.Controller;
+using HatPepper.Search.Presentation.View;
 
 // このプログラムはコマンドライン引数でAPIキーを受け取り、
 // HatPepperの検索および予約機能を統合的に実行します。
@@ -22,7 +22,7 @@ if (args.Length == 0)
 }
 
 // 検索サービスにAPIキーを設定します。
-SearchService.ApiKey = args[0];
+RestaurantRepository.ApiKey = args[0];
 
 // 各コントローラーおよびユースケース、ゲートウェイ、ビューのインスタンスを生成し、
 // アプリケーション全体のコントローラーを構築します。
@@ -31,7 +31,7 @@ var controller =
         new SearchController(
             new SearchRestaurantService(
                 new GeoCoordinator(),
-                new SearchService()),
+                new RestaurantRepository()),
             new SearchRestaurantView()),
         new ReservationController(
             new ReservationUseCase(

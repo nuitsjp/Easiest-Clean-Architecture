@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Search.View;
+﻿namespace HatPepper.Search.Presentation.View;
 
 /// <summary>
 /// レストラン検索結果の表示および選択操作を行うビューのインターフェースです。

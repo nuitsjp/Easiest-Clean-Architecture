@@ -12,10 +12,9 @@
     <ProjectReference Include="..\HatPepper.Reservation.Gateway.HotPepper\HatPepper.Reservation.Gateway.HotPepper.csproj" />
     <ProjectReference Include="..\HatPepper.Reservation.UseCase\HatPepper.Reservation.UseCase.csproj" />
     <ProjectReference Include="..\HatPepper.Reservation.View\HatPepper.Reservation.View.csproj" />
-    <ProjectReference Include="..\HatPepper.Search.Controller\HatPepper.Search.Controller.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
-    <ProjectReference Include="..\HatPepper.Search.View\HatPepper.Search.View.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.Presentation.Controller\HatPepper.Search.Presentation.Controller.csproj" />
   </ItemGroup>
 
 </Project>

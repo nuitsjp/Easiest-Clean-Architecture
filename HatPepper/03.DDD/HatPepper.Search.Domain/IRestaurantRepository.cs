@@ -3,7 +3,7 @@
 /// <summary>
 /// レストラン検索サービスのインターフェースです。
 /// </summary>
-public interface ISearchService
+public interface IRestaurantRepository
 {
     /// <summary>
     /// 指定した現在地からレストランを非同期で検索します。

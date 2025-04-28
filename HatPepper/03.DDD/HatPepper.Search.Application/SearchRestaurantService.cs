@@ -5,7 +5,7 @@ namespace HatPepper.Search.Application;
     /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public class SearchRestaurantService(IGeoCoordinator geoCoordinator, ISearchService searchService) 
+public class SearchRestaurantService(IGeoCoordinator geoCoordinator, IRestaurantRepository restaurantRepository) 
         : ISearchRestaurantService
 {
     /// <summary>
@@ -17,7 +17,7 @@ public class SearchRestaurantService(IGeoCoordinator geoCoordinator, ISearchServ
         var location = await geoCoordinator.GetCurrentAsync();
 
         // 現在地から店舗を検索する。
-        await foreach (var restaurant in searchService.SearchAsync(location))
+        await foreach (var restaurant in restaurantRepository.SearchAsync(location))
         {
             yield return restaurant;
         }

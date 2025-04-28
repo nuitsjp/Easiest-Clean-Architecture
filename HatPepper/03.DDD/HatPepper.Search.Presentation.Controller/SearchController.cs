@@ -1,8 +1,8 @@
 ﻿using HatPepper.Controller;
 using HatPepper.Search.Application;
-using HatPepper.Search.View;
+using HatPepper.Search.Presentation.View;
 
-namespace HatPepper.Search.Controller;
+namespace HatPepper.Search.Presentation.Controller;
 
 /// <summary>
 /// 近隣の店舗を検索する。
