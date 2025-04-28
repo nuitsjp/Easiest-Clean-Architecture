@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="System.Linq.Async" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HatPepper.Generic.Presentation.Controller\HatPepper.Generic.Presentation.Controller.csproj" />
+		<ProjectReference Include="..\HatPepper.Reservation.Application\HatPepper.Reservation.Application.csproj" />
+		<ProjectReference Include="..\HatPepper.Reservation.Presentation.View\HatPepper.Reservation.Presentation.View.csproj" />
+	</ItemGroup>
+
+</Project>

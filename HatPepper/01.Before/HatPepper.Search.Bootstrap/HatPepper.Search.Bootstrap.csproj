@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
+		<ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
+		<ProjectReference Include="..\HatPepper.Search.Presentation.Controller\HatPepper.Search.Presentation.Controller.csproj" />
+	</ItemGroup>
+
+</Project>

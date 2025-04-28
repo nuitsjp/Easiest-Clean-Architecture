@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Reservation.Domain\HatPepper.Reservation.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

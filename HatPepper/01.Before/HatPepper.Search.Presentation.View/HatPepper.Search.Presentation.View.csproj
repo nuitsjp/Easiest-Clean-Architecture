@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="FluentTextTable"/>
+    <PackageReference Include="Sharprompt"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Search.Domain\HatPepper.Search.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
