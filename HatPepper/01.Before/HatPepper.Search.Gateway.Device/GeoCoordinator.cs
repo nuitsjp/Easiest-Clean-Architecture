@@ -5,7 +5,7 @@ namespace HatPepper.Search.Gateway.Device;
 /// <summary>
 /// 端末の位置情報を取得する
 /// </summary>
-public class GeoCoordinator : IGeoCoordinator
+public class GeoCoordinator
 {
     /// <summary>
     /// 現在地を取得する

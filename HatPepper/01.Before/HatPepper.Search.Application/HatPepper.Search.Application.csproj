@@ -2,6 +2,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HatPepper.Search.Domain\HatPepper.Search.Domain.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
+    <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
   </ItemGroup>
 
 </Project>

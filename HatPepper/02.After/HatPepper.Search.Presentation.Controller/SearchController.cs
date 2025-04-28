@@ -6,7 +6,7 @@ namespace HatPepper.Search.Presentation.Controller;
 /// <summary>
 /// 近隣の店舗を検索する。
 /// </summary>
-public class SearchController(ISearchRestaurant service, ISearchRestaurantView view) 
+public class SearchController(ISearchRestaurant searchRestaurant, ISearchRestaurantView view) 
 {
     /// <summary>
     /// 近隣の店舗を検索する。
@@ -15,7 +15,7 @@ public class SearchController(ISearchRestaurant service, ISearchRestaurantView v
     public async Task SelectAsync()
     {
         // 近隣の店舗を検索する。
-        var restaurants = service.FindNearbyAsync();
+        var restaurants = searchRestaurant.FindNearbyAsync();
 
         // VewModelに変換する。
         var restaurantViewModels =
