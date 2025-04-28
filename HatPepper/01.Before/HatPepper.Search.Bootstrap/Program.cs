@@ -16,8 +16,7 @@ if (args.Length == 0)
 // 検索サービスにAPIキーを設定します。
 RestaurantRepository.ApiKey = args[0];
 
-// 各コントローラーおよびユースケース、ゲートウェイ、ビューのインスタンスを生成し、
-// アプリケーション全体のコントローラーを構築します。
+// コントローラーを構築します。
 var controller = new SearchController();
 
 // 近隣の店舗を検索し、結果を表示します。

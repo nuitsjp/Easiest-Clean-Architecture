@@ -12,7 +12,7 @@ public class SearchRestaurant
     /// <summary>
     /// 現在地の近隣店舗を検索する。
     /// </summary>
-    public async IAsyncEnumerable<Restaurant> FindNearbyAsync()
+    public async Task<GourmetSearchResult> FindNearbyAsync()
     {
         // 現在地を取得する。
         var geoCoordinator = new GeoCoordinator();
@@ -20,9 +20,6 @@ public class SearchRestaurant
 
         // 現在地から店舗を検索する。
         var restaurantRepository = new RestaurantRepository();
-        await foreach (var restaurant in restaurantRepository.FindNearbyAsync(location))
-        {
-            yield return restaurant;
-        }
+        return await restaurantRepository.FindNearbyAsync(location);
     }
 }

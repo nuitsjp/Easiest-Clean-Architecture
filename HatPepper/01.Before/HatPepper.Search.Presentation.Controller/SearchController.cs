@@ -12,17 +12,18 @@ public class SearchController
     /// 近隣の店舗を検索する。
     /// </summary>
     /// <returns></returns>
-    public async Task SelectAsync()
+    public async Task FindNearbyAsync()
     {
         // 近隣の店舗を検索する。
         var searchRestaurant = new SearchRestaurant();
-        var restaurants = searchRestaurant.FindNearbyAsync();
+        var gourmetSearchResult = await searchRestaurant.FindNearbyAsync();
 
         // VewModelに変換する。
         var restaurantViewModels =
-            await restaurants
-                .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
-                .ToArrayAsync();
+            gourmetSearchResult
+                .Results
+                .Shops
+                .Select((shop, index) => new RestaurantViewModel(index + 1, shop.Genre.Name, shop.Name));
 
         // 検索結果を表示する。
         var view = new SearchRestaurantView();
