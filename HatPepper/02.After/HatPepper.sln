@@ -6,15 +6,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Gateway.Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Gateway.Device", "HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj", "{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search", "HatPepper.Search\HatPepper.Search.csproj", "{44074701-01BA-4719-83BF-43126E1B0A4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Domain", "HatPepper.Search.Domain\HatPepper.Search.Domain.csproj", "{EFD36CF3-84D1-423B-BEC6-EB0A5EDBE95F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Controller", "HatPepper.Search.Controller\HatPepper.Search.Controller.csproj", "{6DBDC93E-B470-4A14-8EB8-8D8BAE578D4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Application", "HatPepper.Search.Application\HatPepper.Search.Application.csproj", "{7BBA6316-C2DE-4906-8C45-0DAD5EE47186}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.UseCase", "HatPepper.Search.UseCase\HatPepper.Search.UseCase.csproj", "{04712D6C-FD61-46E6-880F-CEB1F7E174F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Presentation.Controller", "HatPepper.Search.Presentation.Controller\HatPepper.Search.Presentation.Controller.csproj", "{F64A53C6-1746-47C3-965D-87F9F4C14BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.View", "HatPepper.Search.View\HatPepper.Search.View.csproj", "{7A8EC993-3787-461B-9572-2D8695A72BEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Presentation.View", "HatPepper.Search.Presentation.View\HatPepper.Search.Presentation.View.csproj", "{04AA74C0-E5EA-4274-B17A-56B2EC2C956C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.PresentationShell", "HatPepper.Search.PresentationShell\HatPepper.Search.PresentationShell.csproj", "{4235C154-D44B-446E-BF35-306F26C36561}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HatPepper.Search.Bootstrap", "HatPepper.Search.Bootstrap\HatPepper.Search.Bootstrap.csproj", "{D390526F-0280-4398-B8A8-5A8FD8806A13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,26 +30,26 @@ Global
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF99468-7D4A-4FF7-9F7A-7BFD42395BE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44074701-01BA-4719-83BF-43126E1B0A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44074701-01BA-4719-83BF-43126E1B0A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44074701-01BA-4719-83BF-43126E1B0A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44074701-01BA-4719-83BF-43126E1B0A4C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6DBDC93E-B470-4A14-8EB8-8D8BAE578D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DBDC93E-B470-4A14-8EB8-8D8BAE578D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DBDC93E-B470-4A14-8EB8-8D8BAE578D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DBDC93E-B470-4A14-8EB8-8D8BAE578D4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04712D6C-FD61-46E6-880F-CEB1F7E174F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04712D6C-FD61-46E6-880F-CEB1F7E174F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04712D6C-FD61-46E6-880F-CEB1F7E174F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04712D6C-FD61-46E6-880F-CEB1F7E174F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A8EC993-3787-461B-9572-2D8695A72BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A8EC993-3787-461B-9572-2D8695A72BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A8EC993-3787-461B-9572-2D8695A72BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A8EC993-3787-461B-9572-2D8695A72BEA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4235C154-D44B-446E-BF35-306F26C36561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4235C154-D44B-446E-BF35-306F26C36561}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4235C154-D44B-446E-BF35-306F26C36561}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4235C154-D44B-446E-BF35-306F26C36561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD36CF3-84D1-423B-BEC6-EB0A5EDBE95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD36CF3-84D1-423B-BEC6-EB0A5EDBE95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD36CF3-84D1-423B-BEC6-EB0A5EDBE95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD36CF3-84D1-423B-BEC6-EB0A5EDBE95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBA6316-C2DE-4906-8C45-0DAD5EE47186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBA6316-C2DE-4906-8C45-0DAD5EE47186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBA6316-C2DE-4906-8C45-0DAD5EE47186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBA6316-C2DE-4906-8C45-0DAD5EE47186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64A53C6-1746-47C3-965D-87F9F4C14BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64A53C6-1746-47C3-965D-87F9F4C14BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64A53C6-1746-47C3-965D-87F9F4C14BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64A53C6-1746-47C3-965D-87F9F4C14BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04AA74C0-E5EA-4274-B17A-56B2EC2C956C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04AA74C0-E5EA-4274-B17A-56B2EC2C956C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04AA74C0-E5EA-4274-B17A-56B2EC2C956C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04AA74C0-E5EA-4274-B17A-56B2EC2C956C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D390526F-0280-4398-B8A8-5A8FD8806A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D390526F-0280-4398-B8A8-5A8FD8806A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D390526F-0280-4398-B8A8-5A8FD8806A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D390526F-0280-4398-B8A8-5A8FD8806A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

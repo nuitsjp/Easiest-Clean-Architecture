@@ -1,0 +1,11 @@
+﻿<Project>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- ソースコードを変更しない限り生成される DLL/EXE が常に同じバイナリにする -->
+		<Deterministic>true</Deterministic>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!-- ビルド時の.NETのバージョンはglobal.jsonで操作する。その.NETの最新バージョンのC#を利用する -->
+		<LangVersion>13</LangVersion>
+	</PropertyGroup>
+</Project>
