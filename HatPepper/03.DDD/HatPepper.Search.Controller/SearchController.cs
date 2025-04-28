@@ -16,7 +16,7 @@ public class SearchController(ISearchRestaurantUseCase useCase, ISearchRestauran
     /// <returns></returns>
     public async Task<RestaurantId> SelectAsync()
     {
-        // 名称で店舗を検索する。
+        // 近隣の店舗を検索する。
         var restaurants = await useCase.FindNearbyAsync().ToListAsync();
 
         // ViewModelに変換する。

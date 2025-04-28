@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using HatPepper.Controller;
+﻿using HatPepper.Controller;
 using HatPepper.Reservation.UseCase;
 using HatPepper.Reservation.View;
 
@@ -33,5 +32,8 @@ public class ReservationController(
 
         // 選択された時間帯・人数で予約処理を実行します。
         await reservationUseCase.ReserveAsync(restaurantId, timeSlot, partySize);
+
+        // 予約完了をユーザーに通知します。
+        reservationView.NotifySuccess();
     }
 }
