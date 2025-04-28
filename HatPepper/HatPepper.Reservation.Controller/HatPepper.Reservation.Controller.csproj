@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HatPepper.Controller\HatPepper.Controller.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.UseCase\HatPepper.Reservation.UseCase.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.View\HatPepper.Reservation.View.csproj" />
     <ProjectReference Include="..\HatPepper.Reservation\HatPepper.Reservation.csproj" />
   </ItemGroup>
 

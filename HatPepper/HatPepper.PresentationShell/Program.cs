@@ -1,6 +1,8 @@
 ﻿using HatPepper.Controller;
 using HatPepper.Reservation.Controller;
 using HatPepper.Reservation.Gateway.HotPepper;
+using HatPepper.Reservation.UseCase;
+using HatPepper.Reservation.View;
 using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
@@ -23,5 +25,8 @@ var controller =
                 new SearchService()),
             new SearchRestaurantView()),
         new ReservationController(
-            new ReservationService()));
+            new ReservationUseCase(
+                new ReservationService()),
+            new ReservationView()
+        ));
 await controller.ReserveRestaurantAsync();
