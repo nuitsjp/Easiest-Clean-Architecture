@@ -1,4 +1,5 @@
-﻿using HatPepper.Search.UseCase;
+﻿using HatPepper.Controller;
+using HatPepper.Search.UseCase;
 using HatPepper.Search.View;
 
 namespace HatPepper.Search.Controller;
@@ -7,15 +8,18 @@ namespace HatPepper.Search.Controller;
 /// 近隣の店舗を検索する。
 /// </summary>
 public class SearchRestaurantController(ISearchRestaurantUseCase useCase, ISearchRestaurantView view) 
+    : ISearchRestaurantController
 {
     /// <summary>
     /// 近隣の店舗を検索する。
     /// </summary>
     /// <returns></returns>
-    public async Task NearbyViewAsync()
+    public async Task<RestaurantId> SelectRestaurantAsync()
     {
         // 名称で店舗を検索する。
         var restaurants = await useCase.FindNearbyAsync().ToListAsync();
+
+        // ViewModelに変換する。
         var viewModels = restaurants
             .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
             .ToList();
@@ -24,6 +28,6 @@ public class SearchRestaurantController(ISearchRestaurantUseCase useCase, ISearc
         view.Show(viewModels);
 
         // 店舗を選択する。
-        var restaurant = view.SelectRestaurant(viewModels);
+        return view.SelectRestaurant(viewModels).Restaurant.Id;
     }
 }

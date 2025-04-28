@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Controller\HatPepper.Controller.csproj" />
     <ProjectReference Include="..\HatPepper.Search.UseCase\HatPepper.Search.UseCase.csproj" />
     <ProjectReference Include="..\HatPepper.Search.View\HatPepper.Search.View.csproj" />
   </ItemGroup>

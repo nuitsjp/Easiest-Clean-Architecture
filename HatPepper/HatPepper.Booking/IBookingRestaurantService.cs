@@ -1,6 +1,6 @@
 ﻿namespace HatPepper.Booking;
 
-public interface IBookingService
+public interface IBookingRestaurantService
 {
     /// <summary>
     /// 指定レストラン・指定日に予約可能な１時間スロットを取得する

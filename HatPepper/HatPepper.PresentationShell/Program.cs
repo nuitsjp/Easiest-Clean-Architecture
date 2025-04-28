@@ -1,4 +1,6 @@
-﻿using HatPepper.Search.Controller;
+﻿using HatPepper.Booking.Controller;
+using HatPepper.Controller;
+using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
 using HatPepper.Search.UseCase;
@@ -12,9 +14,12 @@ if (args.Length == 0)
 
 SearchRestaurantService.ApiKey = args[0];
 
-SearchRestaurantController controller = new SearchRestaurantController(
-    new SearchRestaurantUseCase(
-        new GeoCoordinator(),
-        new SearchRestaurantService()),
-    new SearchRestaurantView());
-await controller.NearbyViewAsync();
+var controller =
+    new HatPepperController(
+        new SearchRestaurantController(
+            new SearchRestaurantUseCase(
+                new GeoCoordinator(),
+                new SearchRestaurantService()),
+            new SearchRestaurantView()),
+        new BookingRestaurantController());
+await controller.ReserveRestaurantAsync();

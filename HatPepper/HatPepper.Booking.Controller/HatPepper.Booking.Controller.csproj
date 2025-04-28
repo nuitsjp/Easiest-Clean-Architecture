@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Controller\HatPepper.Controller.csproj" />
+  </ItemGroup>
+
 </Project>
