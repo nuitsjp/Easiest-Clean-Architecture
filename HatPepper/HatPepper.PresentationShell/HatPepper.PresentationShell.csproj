@@ -8,11 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HatPepper.Booking.Controller\HatPepper.Booking.Controller.csproj" />
-    <ProjectReference Include="..\HatPepper.Booking.Gateway.HotPepper\HatPepper.Booking.Gateway.HotPepper.csproj" />
-    <ProjectReference Include="..\HatPepper.Booking.UseCase\HatPepper.Booking.UseCase.csproj" />
-    <ProjectReference Include="..\HatPepper.Booking.View\HatPepper.Booking.View.csproj" />
-    <ProjectReference Include="..\HatPepper.Controller\HatPepper.Controller.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.Controller\HatPepper.Reservation.Controller.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.Gateway.HotPepper\HatPepper.Reservation.Gateway.HotPepper.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.UseCase\HatPepper.Reservation.UseCase.csproj" />
+    <ProjectReference Include="..\HatPepper.Reservation.View\HatPepper.Reservation.View.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Controller\HatPepper.Search.Controller.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />

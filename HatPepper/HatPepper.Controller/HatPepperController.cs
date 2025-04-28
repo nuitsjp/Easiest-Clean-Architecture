@@ -2,7 +2,7 @@
 
 public class HatPepperController(
     ISearchController searchController,
-    IBookingController bookingController)
+    IReservationController reservationController)
 {
     public async Task ReserveRestaurantAsync()
     {
@@ -10,6 +10,6 @@ public class HatPepperController(
         var restaurantId = await searchController.SelectAsync();
 
         // 店舗を予約する。
-        await bookingController.ReserveAsync(restaurantId);
+        await reservationController.ReserveAsync(restaurantId);
     }
 }

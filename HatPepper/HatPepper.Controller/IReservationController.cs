@@ -1,6 +1,6 @@
 ﻿namespace HatPepper.Controller;
 
-public interface IBookingController
+public interface IReservationController
 {
     Task ReserveAsync(RestaurantId restaurantId);
 }

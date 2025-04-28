@@ -2,7 +2,7 @@
 
 namespace HatPepper.Booking.Controller;
 
-public class BookingController() : IBookingController
+public class ReservationController() : IReservationController
 {
     public Task ReserveAsync(RestaurantId restaurantId)
     {

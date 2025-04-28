@@ -1,6 +1,6 @@
 ﻿using UnitGenerator;
 
-namespace HatPepper.Booking;
+namespace HatPepper.Reservation;
 
 [UnitOf<DateTime>]
 public partial struct TimeSlot;
