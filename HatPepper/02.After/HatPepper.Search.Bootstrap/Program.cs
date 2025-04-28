@@ -23,7 +23,7 @@ RestaurantRepository.ApiKey = args[0];
 // アプリケーション全体のコントローラーを構築します。
 var controller =
     new SearchController(
-        new SearchRestaurantService(
+        new SearchRestaurant(
             new GeoCoordinator(),
             new RestaurantRepository()),
         new SearchRestaurantView());

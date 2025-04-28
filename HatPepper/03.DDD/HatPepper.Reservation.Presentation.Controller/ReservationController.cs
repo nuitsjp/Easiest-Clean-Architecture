@@ -10,7 +10,7 @@ namespace HatPepper.Reservation.Presentation.Controller;
 /// ユースケースおよびビューを連携させ、ユーザー入力に基づく予約フローを制御します。
 /// </summary>
 public class ReservationController(
-    IReservationUseCase reservationUseCase,
+    IReserveRestaurant reserveRestaurant,
     IReservationView reservationView) : IReservationController
 {
     /// <summary>
@@ -24,7 +24,7 @@ public class ReservationController(
         var partySize = reservationView.InputPartySize();
 
         // 指定レストラン・本日・人数に対する予約可能な時間帯を取得します。
-        var timeSlots = await reservationUseCase
+        var timeSlots = await reserveRestaurant
             .GetAvailableTimeSlotsAsync(restaurantId, Date.Today, partySize)
             .ToListAsync();
 
@@ -32,7 +32,7 @@ public class ReservationController(
         var timeSlot = reservationView.SelectTimeSlot(timeSlots);
 
         // 選択された時間帯・人数で予約処理を実行します。
-        await reservationUseCase.ReserveAsync(restaurantId, timeSlot, partySize);
+        await reserveRestaurant.ReserveAsync(restaurantId, timeSlot, partySize);
 
         // 予約完了をユーザーに通知します。
         reservationView.NotifySuccess();

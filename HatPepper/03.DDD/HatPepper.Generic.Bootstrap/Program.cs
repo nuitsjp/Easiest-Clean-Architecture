@@ -29,12 +29,12 @@ RestaurantRepository.ApiKey = args[0];
 var controller =
     new HatPepperController(
         new SearchController(
-            new SearchRestaurantService(
+            new SearchRestaurant(
                 new GeoCoordinator(),
                 new RestaurantRepository()),
             new SearchRestaurantView()),
         new ReservationController(
-            new ReservationUseCase(
+            new ReserveRestaurant(
                 new ReservationService()),
             new ReservationView()
         ));

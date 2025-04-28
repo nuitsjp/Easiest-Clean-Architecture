@@ -10,7 +10,7 @@ namespace HatPepper.Reservation.Application;
 /// <remarks>
 /// インフラ層の <see cref="IReservationService"/> を利用して、ユースケースの実装を委譲しています。
 /// </remarks>
-public class ReservationUseCase(IReservationService reservationService) : IReservationUseCase
+public class ReserveRestaurant(IReservationService reservationService) : IReserveRestaurant
 {
     /// <summary>
     /// 指定したレストラン、日付、人数に対して予約可能な時間帯を非同期で取得します。

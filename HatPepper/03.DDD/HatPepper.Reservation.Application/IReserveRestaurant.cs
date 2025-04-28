@@ -7,7 +7,7 @@ namespace HatPepper.Reservation.Application;
 /// レストラン予約に関するユースケースのインターフェースです。
 /// 予約可能な時間帯の取得や予約処理の契約を定義します。
 /// </summary>
-public interface IReservationUseCase
+public interface IReserveRestaurant
 {
     /// <summary>
     /// 指定したレストラン、日付、人数に対して予約可能な時間帯を非同期で取得します。
