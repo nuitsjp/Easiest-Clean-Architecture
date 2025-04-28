@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Controller;
+﻿namespace HatPepper.Generic.Presentation.Controller;
 
 /// <summary>
 /// 検索および予約機能を統合的に提供するコントローラーです。

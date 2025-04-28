@@ -5,7 +5,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\HatPepper.Controller\HatPepper.Controller.csproj" />
+		<ProjectReference Include="..\HatPepper.Generic.Presentation.Controller\HatPepper.Generic.Presentation.Controller.csproj" />
 		<ProjectReference Include="..\HatPepper.Reservation.Application\HatPepper.Reservation.Application.csproj" />
 		<ProjectReference Include="..\HatPepper.Reservation.Presentation.View\HatPepper.Reservation.Presentation.View.csproj" />
 	</ItemGroup>

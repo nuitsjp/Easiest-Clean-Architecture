@@ -1,4 +1,4 @@
-﻿using HatPepper.Controller;
+﻿using HatPepper.Generic.Presentation.Controller;
 using HatPepper.Reservation.Application;
 using HatPepper.Reservation.Gateway.HotPepper;
 using HatPepper.Reservation.Presentation.Controller;

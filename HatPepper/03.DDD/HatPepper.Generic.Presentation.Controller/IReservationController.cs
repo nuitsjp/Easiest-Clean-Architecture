@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Controller;
+﻿namespace HatPepper.Generic.Presentation.Controller;
 
 /// <summary>
 /// 予約処理を担当するコントローラーのインターフェースです。
