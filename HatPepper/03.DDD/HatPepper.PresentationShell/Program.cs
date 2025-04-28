@@ -3,10 +3,10 @@ using HatPepper.Reservation.Controller;
 using HatPepper.Reservation.Gateway.HotPepper;
 using HatPepper.Reservation.UseCase;
 using HatPepper.Reservation.View;
+using HatPepper.Search.Application;
 using HatPepper.Search.Controller;
 using HatPepper.Search.Gateway.Device;
 using HatPepper.Search.Gateway.HotPepper;
-using HatPepper.Search.UseCase;
 using HatPepper.Search.View;
 
 // このプログラムはコマンドライン引数でAPIキーを受け取り、
@@ -29,7 +29,7 @@ SearchService.ApiKey = args[0];
 var controller =
     new HatPepperController(
         new SearchController(
-            new SearchRestaurantUseCase(
+            new SearchRestaurantService(
                 new GeoCoordinator(),
                 new SearchService()),
             new SearchRestaurantView()),

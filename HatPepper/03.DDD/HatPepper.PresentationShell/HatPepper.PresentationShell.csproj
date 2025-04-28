@@ -15,7 +15,6 @@
     <ProjectReference Include="..\HatPepper.Search.Controller\HatPepper.Search.Controller.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.Device\HatPepper.Search.Gateway.Device.csproj" />
     <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
-    <ProjectReference Include="..\HatPepper.Search.UseCase\HatPepper.Search.UseCase.csproj" />
     <ProjectReference Include="..\HatPepper.Search.View\HatPepper.Search.View.csproj" />
   </ItemGroup>
 
