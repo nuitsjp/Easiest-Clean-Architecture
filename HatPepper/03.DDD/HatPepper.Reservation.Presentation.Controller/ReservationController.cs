@@ -1,4 +1,5 @@
-﻿using HatPepper.Generic.Presentation.Controller;
+﻿using HatPepper.Domain;
+using HatPepper.Generic.Presentation.Controller;
 using HatPepper.Reservation.Application;
 using HatPepper.Reservation.Presentation.View;
 

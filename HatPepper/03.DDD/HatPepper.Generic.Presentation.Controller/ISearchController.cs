@@ -1,4 +1,6 @@
-﻿namespace HatPepper.Generic.Presentation.Controller;
+﻿using HatPepper.Domain;
+
+namespace HatPepper.Generic.Presentation.Controller;
 
 /// <summary>
 /// 店舗検索処理を担当するコントローラーのインターフェースです。

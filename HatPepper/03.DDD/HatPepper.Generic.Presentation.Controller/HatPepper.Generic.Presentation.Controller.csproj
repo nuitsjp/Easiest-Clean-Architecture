@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-	<ItemGroup>
-		<ProjectReference Include="..\HatPepper\HatPepper.csproj" />
-	</ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Domain\HatPepper.Domain.csproj" />
+  </ItemGroup>
 </Project>

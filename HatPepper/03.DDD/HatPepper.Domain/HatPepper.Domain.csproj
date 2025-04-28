@@ -7,7 +7,4 @@
 		</PackageReference>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\HatPepper.Domain\HatPepper.Domain.csproj" />
-	</ItemGroup>
 </Project>

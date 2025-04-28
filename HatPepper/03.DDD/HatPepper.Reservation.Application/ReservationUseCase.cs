@@ -1,4 +1,5 @@
-﻿using HatPepper.Reservation.Domain;
+﻿using HatPepper.Domain;
+using HatPepper.Reservation.Domain;
 
 namespace HatPepper.Reservation.Application;
 

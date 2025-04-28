@@ -1,4 +1,5 @@
-﻿using HatPepper.Generic.Presentation.Controller;
+﻿using HatPepper.Domain;
+using HatPepper.Generic.Presentation.Controller;
 using HatPepper.Search.Application;
 using HatPepper.Search.Presentation.View;
 

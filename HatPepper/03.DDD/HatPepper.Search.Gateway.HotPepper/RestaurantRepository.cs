@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using HatPepper.Domain;
 using HatPepper.Search.Domain;
 
 namespace HatPepper.Search.Gateway.HotPepper;
