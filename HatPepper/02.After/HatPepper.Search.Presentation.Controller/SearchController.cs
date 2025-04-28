@@ -15,14 +15,15 @@ public class SearchController(ISearchRestaurantService service, ISearchRestauran
     public async Task SelectAsync()
     {
         // 近隣の店舗を検索する。
-        var restaurants = await service.FindNearbyAsync().ToListAsync();
+        var restaurants = service.FindNearbyAsync();
 
-        // ViewModelに変換する。
-        var viewModels = restaurants
-            .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
-            .ToList();
+        // VewModelに変換する。
+        var restaurantViewModels =
+            await restaurants
+                .Select((restaurant, index) => new RestaurantViewModel(index + 1, restaurant))
+                .ToArrayAsync();
 
         // 検索結果を表示する。
-        view.Show(viewModels);
+        view.Show(restaurantViewModels);
     }
 }
