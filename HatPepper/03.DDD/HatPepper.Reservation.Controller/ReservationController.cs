@@ -1,5 +1,5 @@
 ﻿using HatPepper.Controller;
-using HatPepper.Reservation.UseCase;
+using HatPepper.Reservation.Application;
 using HatPepper.Reservation.View;
 
 namespace HatPepper.Reservation.Controller;

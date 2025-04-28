@@ -1,6 +1,6 @@
 ﻿using HatPepper.Reservation.Domain;
 
-namespace HatPepper.Reservation.UseCase;
+namespace HatPepper.Reservation.Application;
 
 /// <summary>
 /// レストラン予約に関するユースケースを実装するクラスです。
