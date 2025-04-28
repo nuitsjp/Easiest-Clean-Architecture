@@ -7,7 +7,7 @@ public class ReservationService : IReservationService
         throw new NotImplementedException();
     }
 
-    public Reservation Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
+    public ReservationStatus Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
     {
         throw new NotImplementedException();
     }

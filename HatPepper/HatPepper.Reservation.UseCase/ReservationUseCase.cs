@@ -5,6 +5,6 @@ public class ReservationUseCase(IReservationService reservationService) : IReser
     public IReadOnlyList<TimeSlot> GetAvailableTimeSlots(RestaurantId restaurantId, Date date, int partySize)
         => reservationService.GetAvailableTimeSlots(restaurantId, date, partySize);
 
-    public Reservation Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
+    public ReservationStatus Reserve(RestaurantId restaurantId, TimeSlot timeSlot, int partySize)
         => reservationService.Reserve(restaurantId, timeSlot, partySize);
 }
