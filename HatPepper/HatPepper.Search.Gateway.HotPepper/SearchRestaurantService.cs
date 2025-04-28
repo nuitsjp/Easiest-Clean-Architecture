@@ -25,7 +25,7 @@ public class SearchRestaurantService : ISearchRestaurantService
     /// <summary>
     /// 指定された名称の店舗情報を取得する。
     /// </summary>
-    public async Task<IReadOnlyList<Restaurant>> SearchAsync(Location currentLocation)
+    public async IAsyncEnumerable<Restaurant> SearchAsync(Location currentLocation)
     {
         // リクルート WEBサービスのグルメサーチAPIを利用し、周辺のレストラン情報を取得する
         // Web APIを呼び出しJSONで結果を取得した後、Json.NETを利用してオブジェクト化する
@@ -37,10 +37,10 @@ public class SearchRestaurantService : ISearchRestaurantService
             $"&format=json&type=lite");
 
         // JSONをデシリアライズする。
-        return JsonSerializer.Deserialize<GourmetSearchResult>(json)!
-            .Results
-            .Shops
-            .Select(x => new Restaurant((RestaurantId)x.Id, x.Genre.Name, x.Name))
-            .ToArray();
+        foreach (var shop in JsonSerializer.Deserialize<GourmetSearchResult>(json)!.Results.Shops)
+        {
+            // 店舗情報を返す。
+            yield return new Restaurant((RestaurantId)shop.Id, shop.Genre.Name, shop.Name);
+        }
     }
 }

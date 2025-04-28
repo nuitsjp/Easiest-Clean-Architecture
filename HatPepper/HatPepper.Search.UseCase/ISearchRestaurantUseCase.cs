@@ -8,5 +8,5 @@ public interface ISearchRestaurantUseCase
     /// <summary>
     /// 現在地の近隣店舗を検索する。
     /// </summary>
-    Task<IReadOnlyList<Restaurant>> FindNearbyAsync();
+    IAsyncEnumerable<Restaurant> FindNearbyAsync();
 }

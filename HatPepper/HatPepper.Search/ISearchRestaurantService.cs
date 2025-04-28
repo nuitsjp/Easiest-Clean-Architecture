@@ -2,5 +2,5 @@
 
 public interface ISearchRestaurantService
 {
-    Task<IReadOnlyList<Restaurant>> SearchAsync(Location currentLocation);
+    IAsyncEnumerable<Restaurant> SearchAsync(Location currentLocation);
 }
