@@ -5,7 +5,7 @@ namespace HatPepper.Search.Gateway.HotPepper;
 /// <summary>
 /// グルメサーチAPIクライアント
 /// </summary>
-public class SearchRestaurantService : ISearchRestaurantService
+public class SearchService : ISearchService
 {
     /// <summary>
     /// APIのエンドポイント

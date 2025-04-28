@@ -1,6 +1,6 @@
 ﻿namespace HatPepper.Search;
 
-public interface ISearchRestaurantService
+public interface ISearchService
 {
     IAsyncEnumerable<Restaurant> SearchAsync(Location currentLocation);
 }

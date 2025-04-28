@@ -3,7 +3,7 @@
     /// <summary>
 /// 近隣検索ユースケース
 /// </summary>
-public class SearchRestaurantUseCase(IGeoCoordinator geoCoordinator, ISearchRestaurantService searchRestaurantService) 
+public class SearchRestaurantUseCase(IGeoCoordinator geoCoordinator, ISearchService searchService) 
         : ISearchRestaurantUseCase
 {
     /// <summary>
@@ -15,7 +15,7 @@ public class SearchRestaurantUseCase(IGeoCoordinator geoCoordinator, ISearchRest
         var location = await geoCoordinator.GetCurrentAsync();
 
         // 現在地から店舗を検索する。
-        await foreach (var restaurant in searchRestaurantService.SearchAsync(location))
+        await foreach (var restaurant in searchService.SearchAsync(location))
         {
             yield return restaurant;
         }

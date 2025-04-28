@@ -12,14 +12,14 @@ if (args.Length == 0)
     return;
 }
 
-SearchRestaurantService.ApiKey = args[0];
+SearchService.ApiKey = args[0];
 
 var controller =
     new HatPepperController(
-        new SearchRestaurantController(
+        new SearchController(
             new SearchRestaurantUseCase(
                 new GeoCoordinator(),
-                new SearchRestaurantService()),
+                new SearchService()),
             new SearchRestaurantView()),
-        new BookingRestaurantController());
+        new BookingController());
 await controller.ReserveRestaurantAsync();

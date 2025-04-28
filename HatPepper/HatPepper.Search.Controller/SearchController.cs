@@ -7,14 +7,14 @@ namespace HatPepper.Search.Controller;
 /// <summary>
 /// 近隣の店舗を検索する。
 /// </summary>
-public class SearchRestaurantController(ISearchRestaurantUseCase useCase, ISearchRestaurantView view) 
-    : ISearchRestaurantController
+public class SearchController(ISearchRestaurantUseCase useCase, ISearchRestaurantView view) 
+    : ISearchController
 {
     /// <summary>
     /// 近隣の店舗を検索する。
     /// </summary>
     /// <returns></returns>
-    public async Task<RestaurantId> SelectRestaurantAsync()
+    public async Task<RestaurantId> SelectAsync()
     {
         // 名称で店舗を検索する。
         var restaurants = await useCase.FindNearbyAsync().ToListAsync();
