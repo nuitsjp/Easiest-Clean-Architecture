@@ -1,4 +1,4 @@
-﻿namespace HatPepper.Reservation;
+﻿namespace HatPepper.Reservation.Domain;
 
 /// <summary>
 /// レストランの予約に関するサービスのインターフェースです。

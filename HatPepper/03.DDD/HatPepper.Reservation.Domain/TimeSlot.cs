@@ -1,6 +1,6 @@
 ﻿using UnitGenerator;
 
-namespace HatPepper.Reservation;
+namespace HatPepper.Reservation.Domain;
 
 /// <summary>
 /// 日時情報を表す値オブジェクトです。

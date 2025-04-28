@@ -1,17 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
-
 	<ItemGroup>
-	  <PackageReference Include="Sharprompt" Version="3.0.0" />
+	  <PackageReference Include="Sharprompt" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\HatPepper.Reservation\HatPepper.Reservation.csproj" />
+	  <ProjectReference Include="..\HatPepper.Reservation.Domain\HatPepper.Reservation.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

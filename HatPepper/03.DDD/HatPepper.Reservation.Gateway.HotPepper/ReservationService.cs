@@ -1,4 +1,6 @@
-﻿namespace HatPepper.Reservation.Gateway.HotPepper;
+﻿using HatPepper.Reservation.Domain;
+
+namespace HatPepper.Reservation.Gateway.HotPepper;
 
 /// <summary>
 /// HotPepper APIを利用したレストラン予約サービスの実装です。

@@ -1,4 +1,6 @@
-﻿namespace HatPepper.Reservation.View;
+﻿using HatPepper.Reservation.Domain;
+
+namespace HatPepper.Reservation.View;
 
 /// <summary>
 /// レストラン予約フローにおけるユーザーインターフェース操作を抽象化するインターフェースです。
