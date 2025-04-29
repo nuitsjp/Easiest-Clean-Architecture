@@ -1,4 +1,5 @@
 ﻿using FluentTextTable;
+using HatPepper.Search.Gateway.HotPepper;
 
 namespace HatPepper.Search.Presentation.View;
 
@@ -10,9 +11,14 @@ public class SearchRestaurantView
     /// <summary>
     /// レストランの検索結果一覧をテーブル形式で表示します。
     /// </summary>
-    /// <param name="restaurants">表示対象のレストラン情報のコレクションです。</param>
-    public void Show(IEnumerable<RestaurantViewModel> restaurants)
+    public void Show(GourmetSearchResult gourmetSearchResult)
     {
+        var restaurants =
+            gourmetSearchResult
+                .Results
+                .Shops
+                .Select((shop, index) => new RestaurantViewModel(index + 1, shop));
+
         // 検索結果をテーブル状に表示します。ユーザーが視覚的に比較しやすいようにしています。
         Build
             .TextTable<RestaurantViewModel>(builder =>
