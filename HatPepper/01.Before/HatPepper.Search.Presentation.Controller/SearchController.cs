@@ -23,7 +23,7 @@ public class SearchController
             gourmetSearchResult
                 .Results
                 .Shops
-                .Select((shop, index) => new RestaurantViewModel(index + 1, shop.Genre.Name, shop.Name));
+                .Select((shop, index) => new RestaurantViewModel(index + 1, shop));
 
         // 検索結果を表示する。
         var view = new SearchRestaurantView();

@@ -5,4 +5,8 @@
     <PackageReference Include="Sharprompt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HatPepper.Search.Gateway.HotPepper\HatPepper.Search.Gateway.HotPepper.csproj" />
+  </ItemGroup>
+
 </Project>
