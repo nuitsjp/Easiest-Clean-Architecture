@@ -20,6 +20,6 @@ public class SearchRestaurantController
 
         // 検索結果を表示する。
         var view = new SearchRestaurantView();
-        view.Show(gourmetSearchResult);
+        view.Show(gourmetSearchResult.Results.Shops);
     }
 }

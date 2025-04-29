@@ -11,13 +11,11 @@ public class SearchRestaurantView
     /// <summary>
     /// レストランの検索結果一覧をテーブル形式で表示します。
     /// </summary>
-    public void Show(GourmetSearchResult gourmetSearchResult)
+    public void Show(IEnumerable<Shop> shops)
     {
+        // Shopからインデックスを付与して、表示用のレコードに変換します。
         var restaurants =
-            gourmetSearchResult
-                .Results
-                .Shops
-                .Select((shop, index) => new RestaurantViewModel(index + 1, shop));
+            shops.Select((shop, index) => new RestaurantViewModel(index + 1, shop.Genre.Name, shop.Name));
 
         // 検索結果をテーブル状に表示します。ユーザーが視覚的に比較しやすいようにしています。
         Build
