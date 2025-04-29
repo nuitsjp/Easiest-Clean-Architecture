@@ -8,9 +8,10 @@ Clean Architectureの解説用PowerPointと、サンプルコードを公開し�
 
 - [https://creativecommons.org/licenses/by-sa/4.0/deed.ja](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 
-資料は以下の2種類があります。
+資料は以下の3種類があります。
 
 - [Androidアプリケーションベースの解説](Android/README.md)
 - [.NET Core Consoleアプリケーションベースの解説](DotNetConsole/README.md)
+- [世界一わかりやすいClean Architecture - 技術レイヤー分割より大切なモノ](2025-04-30/README.md)
 
 前者の資料が現時点では最新ですので、コード以外はAndroid版を参考にされることをお勧めいたします。
