@@ -14,7 +14,7 @@ public class SearchRestaurantView
     public void Show(IEnumerable<Shop> shops)
     {
         // Shopからインデックスを付与して、表示用のレコードに変換します。
-        var restaurants =
+        var restaurantViewModels =
             shops.Select((shop, index) => new RestaurantViewModel(index + 1, shop.Genre.Name, shop.Name));
 
         // 検索結果をテーブル状に表示します。ユーザーが視覚的に比較しやすいようにしています。
@@ -27,6 +27,6 @@ public class SearchRestaurantView
                     .Columns.Add(x => x.Name).NameAs("店名")
                     .Columns.Add(x => x.Genre).NameAs("ジャンル");
             })
-            .WriteLine(restaurants);
+            .WriteLine(restaurantViewModels);
     }
 }
