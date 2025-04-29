@@ -14,7 +14,7 @@ if (args.Length == 0)
 }
 
 // 検索サービスにAPIキーを設定します。
-GourmetSearchApi.ApiKey = args[0];
+GourmetService.ApiKey = args[0];
 
 // コントローラーを構築します。
 var controller = new SearchRestaurantController();
