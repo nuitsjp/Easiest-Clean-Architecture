@@ -17,7 +17,7 @@ if (args.Length == 0)
 GourmetSearchApi.ApiKey = args[0];
 
 // コントローラーを構築します。
-var controller = new SearchController();
+var controller = new SearchRestaurantController();
 
 // 近隣の店舗を検索し、結果を表示します。
 await controller.FindNearbyAsync();

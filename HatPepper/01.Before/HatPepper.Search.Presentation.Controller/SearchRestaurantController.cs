@@ -6,7 +6,7 @@ namespace HatPepper.Search.Presentation.Controller;
 /// <summary>
 /// 近隣の店舗を検索する。
 /// </summary>
-public class SearchController
+public class SearchRestaurantController
 {
     /// <summary>
     /// 近隣の店舗を検索する。
